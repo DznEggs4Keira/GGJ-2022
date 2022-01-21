@@ -23,17 +23,23 @@ public class Player : MonoBehaviour
         horizontalMove = Input.GetAxisRaw("Horizontal") * playerSpeed;
 
         // Jump
-        //if(vertical > 0) {
-        if (Input.GetButtonDown("Jump")) {
+        if(Input.GetButtonDown("Jump")) {
             jump = true;
+        }
+
+        // Crouch
+        // Jump
+        if (Input.GetButtonDown("Crouch")) {
+            crouch = true;
+        } else if (Input.GetButtonUp("Crouch")) {
+            crouch = false;
         }
 
     }
 
     private void FixedUpdate() {
         // Move our character
-        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
-        //crouch = false;
     }
 }
