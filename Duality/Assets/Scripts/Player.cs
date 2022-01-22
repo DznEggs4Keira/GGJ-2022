@@ -7,20 +7,26 @@ public class Player : MonoBehaviour
     [SerializeField] float playerSpeed = 40f;
 
     CharacterMovement controller;
+    Animator animator;
+
     float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
 
     // Start is called before the first frame update
-    void Start()
+    void Start() 
     {
-        controller = GetComponent<CharacterMovement>();    
+        controller = GetComponent<CharacterMovement>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        UpdateAnimation();
+
         HandleInput();
+        
     }
 
     private void FixedUpdate() {
@@ -31,6 +37,12 @@ public class Player : MonoBehaviour
     private void HandleMovement() {
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
+    }
+
+    private void UpdateAnimation() {
+        animator.SetBool("isCrouching", crouch);
+
+        if (jump) { animator.SetTrigger("isJumping"); }
     }
 
     private void HandleInput() {
