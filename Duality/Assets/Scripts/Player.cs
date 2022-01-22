@@ -26,6 +26,10 @@ public class Player : MonoBehaviour
         UpdateAnimation();
 
         HandleInput();
+
+        // Flashlight
+        
+        controller.LookAtMouse();
         
     }
 
@@ -40,7 +44,7 @@ public class Player : MonoBehaviour
     }
 
     private void UpdateAnimation() {
-        animator.SetBool("isCrouching", crouch);
+        animator.SetBool("isCrouching", controller.GetCurrentCrouch);
 
         if (jump) { animator.SetTrigger("isJumping"); }
     }

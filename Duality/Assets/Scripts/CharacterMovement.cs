@@ -33,6 +33,16 @@ public class CharacterMovement : MonoBehaviour {
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
+	//get current crouch for animation property
+	bool m_currCrouch;
+
+	//look at mouse position
+	float raycast_depth = 100.0f;
+	LayerMask floor_layer_mask;
+	string floor_layer_name = "2D Floor";
+
+	public bool GetCurrentCrouch { get { return m_currCrouch; } set { m_currCrouch = value; } }
+
 	private void Awake() {
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
@@ -43,7 +53,11 @@ public class CharacterMovement : MonoBehaviour {
 			OnCrouchEvent = new BoolEvent();
 	}
 
-	private void FixedUpdate() {
+    private void Start() {
+		floor_layer_mask = LayerMask.GetMask(floor_layer_name);
+    }
+
+    private void FixedUpdate() {
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
 
@@ -68,6 +82,8 @@ public class CharacterMovement : MonoBehaviour {
 				crouch = true;
 			}
 		}
+
+		m_currCrouch = crouch;
 
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl) {
@@ -120,6 +136,25 @@ public class CharacterMovement : MonoBehaviour {
 		}
 	}
 
+	public void LookAtMouse() {
+		Vector3 mouse_position = Input.mousePosition;
+
+		Ray mouse_ray = Camera.main.ScreenPointToRay(mouse_position);
+		RaycastHit[] mouse_hits = Physics.RaycastAll(mouse_ray, raycast_depth, floor_layer_mask);
+
+		if(mouse_hits.Length == 1) {
+			Vector3 hit_position = mouse_hits[0].point;
+
+			Vector3 local_hit_position = transform.InverseTransformPoint(hit_position);
+			local_hit_position.y = 0;
+			Vector3 look_position = transform.TransformPoint(local_hit_position);
+
+			//Using Quaternion
+			Vector3 look_direction = look_position - transform.position;
+			transform.rotation = Quaternion.LookRotation(look_direction, transform.up);
+        }
+
+    }
 
 	private void Flip() {
 		// Switch the way the player is labelled as facing.
@@ -130,4 +165,6 @@ public class CharacterMovement : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+
 }
