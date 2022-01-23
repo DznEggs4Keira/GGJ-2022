@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Player : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
     float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
+    bool torch = false;
 
     // Start is called before the first frame update
     void Start() 
@@ -26,7 +28,9 @@ public class Player : MonoBehaviour
         UpdateAnimation();
 
         HandleInput();
-        
+
+        HandleTorch();
+
     }
 
     private void FixedUpdate() {
@@ -39,8 +43,13 @@ public class Player : MonoBehaviour
         jump = false;
     }
 
+    private void HandleTorch() {
+        GetComponentInChildren<Light2D>().enabled = torch;
+        controller.LookAtMouse(torch);
+    }
+
     private void UpdateAnimation() {
-        animator.SetBool("isCrouching", crouch);
+        animator.SetBool("isCrouching", controller.GetCurrentCrouch);
 
         if (jump) { animator.SetTrigger("isJumping"); }
     }
@@ -60,6 +69,13 @@ public class Player : MonoBehaviour
             crouch = true;
         } else if (Input.GetButtonUp("Crouch")) {
             crouch = false;
+        }
+
+        // Flashlight
+        if (Input.GetButtonDown("Torchlight")) {
+            torch = true;
+        } else if (Input.GetButtonUp("Torchlight")) {
+            torch = false;
         }
     }
 }
