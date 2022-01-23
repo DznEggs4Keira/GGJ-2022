@@ -141,12 +141,20 @@ public class CharacterMovement : MonoBehaviour {
 
 		//only work if torch is on
 		if(torch) {
+			Vector3 mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+			Vector3 aimDirection = (mouse_position - transform.position).normalized;
+			float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+			m_Torchlight.eulerAngles = new Vector3(0, 0, angle);
+
+			/*
 			Vector3 mouse_position = Input.mousePosition;
 
 			Ray mouse_ray = Camera.main.ScreenPointToRay(mouse_position);
 			RaycastHit[] mouse_hits = Physics.RaycastAll(mouse_ray, raycast_depth, floor_layer_mask);
 
-			if(mouse_hits.Length == 1) {
+			if (mouse_hits.Length == 1) {
+				
 				Vector3 hit_position = mouse_hits[0].point;
 
 				Vector3 local_hit_position = m_Torchlight.InverseTransformPoint(hit_position);
@@ -157,6 +165,7 @@ public class CharacterMovement : MonoBehaviour {
 				Vector3 look_direction = look_position - m_Torchlight.position;
 				m_Torchlight.rotation = Quaternion.LookRotation(look_direction, m_Torchlight.up);
 			}
+			*/
 		}
 	}
 
