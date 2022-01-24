@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297661031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.98, y: 1.53, z: 0}
+  m_LocalPosition: {x: 4.11, y: 1.56, z: 0}
   m_LocalScale: {x: 2.42, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 73540791490358609}
@@ -59,12 +59,12 @@ MonoBehaviour:
   m_PointLightInnerAngle: 67.86
   m_PointLightOuterAngle: 88.76
   m_PointLightInnerRadius: 3.0649235
-  m_PointLightOuterRadius: 4.203808
+  m_PointLightOuterRadius: 4.0039
   m_PointLightDistance: 3
   m_PointLightQuality: 1
-  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricSides: 3
   m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
+  m_ShapeLightParametricRadius: 1.09
   m_ShapeLightFalloffSize: 0.5
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
@@ -72,37 +72,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &1960250220
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1960250221}
-  m_Layer: 3
-  m_Name: Torchlight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1960250221
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960250220}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.618, y: -0.122, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 73540791490358609}
-  m_Father: {fileID: 835437435364892684}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &671711865722455848
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +99,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 73540791490358609}
   m_Father: {fileID: 835437435364892684}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -401,12 +371,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5272559835482373119}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.038, y: -0.122, z: 0}
-  m_LocalScale: {x: 0.4518, y: 0.2832, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.065600015, y: -0.024399996, z: 0}
+  m_LocalScale: {x: 0.04, y: 0.03, z: 1}
   m_Children:
   - {fileID: 1297661032}
-  m_Father: {fileID: 1960250221}
+  m_Father: {fileID: 6165224134142055737}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2005714821033340271
@@ -528,7 +498,6 @@ Transform:
   m_Children:
   - {fileID: 6165224134142055737}
   - {fileID: 6419036038733757988}
-  - {fileID: 1960250221}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -587,7 +556,8 @@ MonoBehaviour:
     m_Bits: 55
   m_GroundCheck: {fileID: 3470978967678733685}
   m_CeilingCheck: {fileID: 6216295175319315550}
-  m_Torchlight: {fileID: 1960250221}
+  m_Arm: {fileID: 1297661032}
+  m_Torch: {fileID: 1297661032}
   m_CrouchDisableCollider: {fileID: 1585249036583362195}
   OnLandEvent:
     m_PersistentCalls:
@@ -607,6 +577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c379c6863f8fed42b7855b6a261fc75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionDistance: 0
+  interactionText: {fileID: 0}
 --- !u!95 &1807343354
 Animator:
   serializedVersion: 3
