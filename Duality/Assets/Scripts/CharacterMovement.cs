@@ -170,6 +170,4 @@ public class CharacterMovement : MonoBehaviour {
 		theScale.x *= -1;
 		m_Model.localScale = theScale;
 	}
-
-
 }

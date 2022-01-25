@@ -1,60 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ChracterInteraction : MonoBehaviour
 {
-    public float interactionDistance;
+    private Interactable m_Interactable;
 
-    public TMPro.TextMeshProUGUI interactionText;
+    public TextMeshProUGUI interactionText;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool isInteracting = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*
-        Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2f, Screen.height / 2f, 0f));
-        RaycastHit hit;
+    private void Update() {
 
-        bool successfulHit = false;
-
-        if(Physics.Raycast(ray, out hit, interactionDistance)) {
-            Interactable interactable = hit.collider.GetComponent<Interactable>();
-
-            if(interactable != null) {
-                HandleInteraction(interactable);
-                interactionText.text = interactable.GetDescription();
-                successfulHit = true;
-            }
+        if (isInteracting && m_Interactable != null) {
+            HandleInteraction(m_Interactable);
+            
         }
-
-        if (!successfulHit) interactionText.text = "";
-        */
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
 
-        Interactable interactable = collision.GetComponentInParent<Interactable>();
+        m_Interactable = collision.GetComponentInParent<Interactable>();
 
-        if (interactable != null) {
-            interactionText.text = interactable.GetDescription();
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision) {
-        Interactable interactable = collision.GetComponentInParent<Interactable>();
-
-        if (interactable != null) {
-            HandleInteraction(interactable);
+        if (m_Interactable != null) {
+            isInteracting = true;
+            interactionText.text = m_Interactable.GetDescription();
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
+        isInteracting = false;
         interactionText.text = "";
     }
 
@@ -64,6 +40,7 @@ public class ChracterInteraction : MonoBehaviour
                 //if you tap the interaction button
                 if(Input.GetButtonDown("Interact")) {
                     interactable.Interact();
+                    isInteracting = false;
                 }
                 break;
 
@@ -71,11 +48,13 @@ public class ChracterInteraction : MonoBehaviour
                 // if you keep the interaction button pressed
                 if (Input.GetButton("Interact")) {
                     interactable.Interact();
+                    isInteracting = false;
                 }
                 break;
 
             case Interactable.Interactions.Minigame:
                 // call a minigame function for solving the puzzle?
+                isInteracting = false;
                 break;
 
             default:
