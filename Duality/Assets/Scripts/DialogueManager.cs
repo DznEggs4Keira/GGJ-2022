@@ -8,6 +8,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
+    public Animator animator;
+
     private Queue<string> sentences;
 
     private void Start() {
@@ -15,6 +17,8 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void StartDialogue(Dialogue dialogue) {
+
+        animator.SetBool("isOpen", true);
 
         nameText.text = dialogue.m_Name;
 
@@ -35,11 +39,22 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }
 
+    IEnumerator TypeSentence (string sentence) {
+
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray()) {
+            dialogueText.text += letter;
+            yield return null;
+        }
     }
 
     private void EndDialogue() {
+        animator.SetBool("isOpen", false);
+
         Debug.Log("End of conversation");
     }
 }
