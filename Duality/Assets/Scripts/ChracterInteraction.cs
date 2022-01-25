@@ -42,8 +42,15 @@ public class ChracterInteraction : MonoBehaviour
         Interactable interactable = collision.GetComponentInParent<Interactable>();
 
         if (interactable != null) {
-            HandleInteraction(interactable);
             interactionText.text = interactable.GetDescription();
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision) {
+        Interactable interactable = collision.GetComponentInParent<Interactable>();
+
+        if (interactable != null) {
+            HandleInteraction(interactable);
         }
     }
 
@@ -63,7 +70,7 @@ public class ChracterInteraction : MonoBehaviour
             case Interactable.Interactions.Hold:
                 // if you keep the interaction button pressed
                 if (Input.GetButton("Interact")) {
-                    //interactable.Interact();
+                    interactable.Interact();
                 }
                 break;
 

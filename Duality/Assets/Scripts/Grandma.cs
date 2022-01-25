@@ -12,9 +12,6 @@ public class Grandma : Interactable
     public override void Interact() {
 
         Debug.Log("Talking to Grandma");
-
-        /*
         GetComponent<DialogueTrigger>().TriggerDialogue();
-        */
     }
 }
