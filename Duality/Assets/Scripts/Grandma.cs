@@ -10,11 +10,11 @@ public class Grandma : Interactable
         return "Press E to talk to grandma";
     }
     public override void Interact() {
-        EnableSpeechBubble();
-        GetComponent<DialogueTrigger>().TriggerDialogue();
-    }
 
-    private void EnableSpeechBubble() {
-        m_SpeechBubble.gameObject.SetActive(true);
+        Debug.Log("Talking to Grandma");
+
+        /*
+        GetComponent<DialogueTrigger>().TriggerDialogue();
+        */
     }
 }

@@ -39,11 +39,6 @@ public class CharacterMovement : MonoBehaviour {
 	//get current crouch for animation property
 	bool m_currCrouch;
 
-	//look at mouse position
-	float raycast_depth = 100.0f;
-	LayerMask floor_layer_mask;
-	string floor_layer_name = "BackWall";
-
 	public bool GetCurrentCrouch { get { return m_currCrouch; } set { m_currCrouch = value; } }
 
 	private void Awake() {
@@ -55,10 +50,6 @@ public class CharacterMovement : MonoBehaviour {
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
 	}
-
-    private void Start() {
-		floor_layer_mask = LayerMask.GetMask(floor_layer_name);
-    }
 
     private void FixedUpdate() {
 		bool wasGrounded = m_Grounded;
