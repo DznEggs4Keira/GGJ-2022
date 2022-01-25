@@ -13,6 +13,7 @@ public class CharacterMovement : MonoBehaviour {
 	[SerializeField] private LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
 	[SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
+	[SerializeField] private Transform m_Model;
 	[SerializeField] private Transform m_Arm;
 	[SerializeField] private Transform m_Torch;
 	[SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
@@ -174,9 +175,9 @@ public class CharacterMovement : MonoBehaviour {
 		//m_SpriteRenderer.flipY = m_FacingRight;
 
 		// Multiply the player's x local scale by -1.
-		Vector3 theScale = transform.localScale;
+		Vector3 theScale = m_Model.localScale;
 		theScale.x *= -1;
-		transform.localScale = theScale;
+		m_Model.localScale = theScale;
 	}
 
 

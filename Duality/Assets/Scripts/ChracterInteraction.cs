@@ -17,7 +17,8 @@ public class ChracterInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2f, Screen.height / 2f));
+        /*
+        Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2f, Screen.height / 2f, 0f));
         RaycastHit hit;
 
         bool successfulHit = false;
@@ -33,7 +34,21 @@ public class ChracterInteraction : MonoBehaviour
         }
 
         if (!successfulHit) interactionText.text = "";
+        */
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision) {
+
+        Interactable interactable = collision.GetComponentInParent<Interactable>();
+
+        if (interactable != null) {
+            HandleInteraction(interactable);
+            interactionText.text = interactable.GetDescription();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) {
+        interactionText.text = "";
     }
 
     private void HandleInteraction(Interactable interactable) {
@@ -48,7 +63,7 @@ public class ChracterInteraction : MonoBehaviour
             case Interactable.Interactions.Hold:
                 // if you keep the interaction button pressed
                 if (Input.GetButton("Interact")) {
-                    interactable.Interact();
+                    //interactable.Interact();
                 }
                 break;
 
