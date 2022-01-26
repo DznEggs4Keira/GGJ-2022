@@ -163,6 +163,22 @@ public class CharacterMovement : MonoBehaviour {
 
 	public void LookAtMouse(Transform playerArm, Transform Torchlight, bool torch) {
 
+		//update arm with player direction
+		Vector3 localScale = Vector3.one;
+		if (_horizontal < 0) {
+			//flip player arm based on movement
+			localScale.x = -0.04f;
+			localScale.y = playerArm.localScale.y;
+		} else if (_horizontal > 0) {
+			localScale.x = +0.04f;
+			localScale.y = playerArm.localScale.y;
+		} else {
+			localScale.x = playerArm.localScale.x;
+			localScale.y = playerArm.localScale.y;
+        }
+
+		playerArm.localScale = localScale;
+
 		//only work if torch is on
 		if (torch) {
 
@@ -172,19 +188,27 @@ public class CharacterMovement : MonoBehaviour {
 			float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
 			playerArm.eulerAngles = new Vector3(0, 0, angle);
 
-			Vector3 localScale = Vector3.one;
-			if (angle > 90 || angle < -90) {
-				localScale.x = playerArm.localScale.x;
-				localScale.y = -0.03f;
-				Torchlight.localEulerAngles = new Vector3(0, 0, -Torchlight.localEulerAngles.z);
-			} else {
-				localScale.x = playerArm.localScale.x;
-				localScale.y = +0.03f;
-				Torchlight.localEulerAngles = new Vector3(0, 0, Torchlight.localEulerAngles.z);
-			}
+			if (angle > 90) {
+				playerArm.eulerAngles = new Vector3(0, 0, 90);
 
-			playerArm.localScale = localScale;
-        }
+			} else if (angle < -90) {
+				playerArm.eulerAngles = new Vector3(0, 0, -90);
+			}
+				/*
+				Vector3 localScale = Vector3.one;
+				if (angle > 90 || angle < -90) {
+					localScale.x = playerArm.localScale.x;
+					localScale.y = -0.03f;
+					Torchlight.localEulerAngles = new Vector3(0, 0, -Torchlight.localEulerAngles.z);
+				} else {
+					localScale.x = playerArm.localScale.x;
+					localScale.y = +0.03f;
+					Torchlight.localEulerAngles = new Vector3(0, 0, Torchlight.localEulerAngles.z);
+				}
+
+				playerArm.localScale = localScale;
+				*/
+			}
 	}
 
 	#endregion
