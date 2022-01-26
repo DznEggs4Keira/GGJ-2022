@@ -132,8 +132,12 @@ public class CharacterMovement : MonoBehaviour {
 		playerAnim.SetBool("isJumping", !isGrounded);
 		playerAnim.SetBool("isCrouching", isCrouching);
 
-		playerAnim.SetBool("isWalking", _horizontal != 0);
-		if (_horizontal != 0) playerSR.flipX = _horizontal < 0;
+		//playerAnim.SetBool("isWalking", _horizontal != 0);
+		if (_horizontal != 0) {
+			//flip player model based on movement
+			playerSR.flipX = _horizontal < 0;
+		}
+			
 	}
 
 	void CalculateIsGrounded() {
@@ -155,6 +159,32 @@ public class CharacterMovement : MonoBehaviour {
 	internal void TeleportTo(Vector3 position) {
 		playerRB.position = position;
 		playerRB.velocity = Vector2.zero;
+	}
+
+	public void LookAtMouse(Transform playerArm, Transform Torchlight, bool torch) {
+
+		//only work if torch is on
+		if (torch) {
+
+			Vector3 mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+			Vector3 aimDirection = (mouse_position - transform.position).normalized;
+			float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+			playerArm.eulerAngles = new Vector3(0, 0, angle);
+
+			Vector3 localScale = Vector3.one;
+			if (angle > 90 || angle < -90) {
+				localScale.x = playerArm.localScale.x;
+				localScale.y = -0.03f;
+				Torchlight.localEulerAngles = new Vector3(0, 0, -Torchlight.localEulerAngles.z);
+			} else {
+				localScale.x = playerArm.localScale.x;
+				localScale.y = +0.03f;
+				Torchlight.localEulerAngles = new Vector3(0, 0, Torchlight.localEulerAngles.z);
+			}
+
+			playerArm.localScale = localScale;
+        }
 	}
 
 	#endregion
@@ -285,10 +315,7 @@ public class CharacterMovement : MonoBehaviour {
 		}
 	}
 
-	/*
 	public void LookAtMouse(bool torch) {
-
-		// Disable for now
 
 		//only work if torch is on
 		if(torch) {
@@ -312,9 +339,6 @@ public class CharacterMovement : MonoBehaviour {
 			m_Arm.localScale = localScale;
 		}
 	}
-	*/
-
-	/*
 	private void Flip() {
 		// Switch the way the player is labelled as facing.
 		m_FacingRight = !m_FacingRight;
