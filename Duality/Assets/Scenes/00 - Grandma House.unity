@@ -233,7 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 208837925}
   - component: {fileID: 208837926}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Cellar_BackWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,14 +418,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 519420031, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: orthographic size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 128579660467606699, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 835437435364892684, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -469,26 +461,6 @@ PrefabInstance:
     - target: {fileID: 835437435364892684, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5890714941125912280, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_fontSize
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5890714941125912280, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5890714941125912280, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 5890714941125912280, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6969885431055004352, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8572619583001715516, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_Name
@@ -635,7 +607,7 @@ GameObject:
   - component: {fileID: 612107657}
   - component: {fileID: 612107659}
   - component: {fileID: 612107658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AtticFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -743,7 +715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 693510680}
   - component: {fileID: 693510681}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: BalconyWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1126,7 +1098,7 @@ GameObject:
   - component: {fileID: 1004392031}
   - component: {fileID: 1004392033}
   - component: {fileID: 1004392032}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DiningAreaFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1234,7 +1206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1111624088}
   - component: {fileID: 1111624089}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Attic_BackWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1322,7 +1294,7 @@ GameObject:
   - component: {fileID: 1186975402}
   - component: {fileID: 1186975404}
   - component: {fileID: 1186975403}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MainFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1487,7 +1459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1266137807}
   - component: {fileID: 1266137808}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: DiningAreaWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1570,7 +1542,7 @@ GameObject:
   - component: {fileID: 1331932927}
   - component: {fileID: 1331932929}
   - component: {fileID: 1331932928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BalconyFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1746,6 +1718,11 @@ Transform:
 --- !u!224 &1488443373 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+  m_PrefabInstance: {fileID: 4630155485671745004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1488443377 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1780439078959724026, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
   m_PrefabInstance: {fileID: 4630155485671745004}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1558144937
@@ -1944,6 +1921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!4 &1699094423
 Transform:
   m_ObjectHideFlags: 0
@@ -1968,7 +1946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1738093567}
   - component: {fileID: 1738093568}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: MainHouse_BackWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2056,7 +2034,7 @@ GameObject:
   - component: {fileID: 1752667383}
   - component: {fileID: 1752667385}
   - component: {fileID: 1752667384}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CellarFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2195,7 +2173,7 @@ GameObject:
   - component: {fileID: 1932593917}
   - component: {fileID: 1932593919}
   - component: {fileID: 1932593918}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SecondFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2854,6 +2832,7 @@ MonoBehaviour:
     - I'm Grandma
     - I may just look like a blob for now, but i am indeed....
     - Grandma
+  animator: {fileID: 1488443377}
 --- !u!4 &8422370575576952611
 Transform:
   m_ObjectHideFlags: 0
