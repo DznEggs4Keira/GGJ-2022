@@ -986,7 +986,7 @@ MonoBehaviour:
   _speed: 5
   _crouchSpeed: 0.36
   _jumpVelocity: 10
-  _maxJumps: 1
+  _maxJumps: 2
   _downPull: 0.1
   _maxJumpDuration: 0.1
 --- !u!114 &3503258906493811948
