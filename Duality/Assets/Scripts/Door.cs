@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class Door : Interactable
 {
+    [SerializeField] SpriteRenderer OverlaySR;
+
     public override string GetDescription() {
         return "Hold E to open the door";
     }
 
     public override void Interact() {
-        Debug.Log("Door Opened");
+        StartCoroutine(FadeOverlay());
+    }
+
+    IEnumerator FadeOverlay() {
+        while (OverlaySR.color.a != 0f) {
+            OverlaySR.color = new Color(OverlaySR.color.r, OverlaySR.color.g, OverlaySR.color.b, OverlaySR.color.a - Time.deltaTime);
+        }
+        yield return null;
     }
 }

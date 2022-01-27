@@ -6,15 +6,14 @@ public class Ladder : Interactable
 {
     [SerializeField] Transform Top;
     [SerializeField] Transform Bottom;
+    [SerializeField] Player Player;
 
     public override string GetDescription() {
         return "Hold E to use ladder";
     }
 
     public override void Interact() {
-        var Player = FindObjectOfType<Player>();
-
-        var hit = Physics2D.OverlapCircle(Player.controller.PlayerFeet.position, 0.1f);
+     var hit = Physics2D.OverlapCircle(Player.controller.PlayerFeet.position, 0.1f, LayerMask.GetMask("Interactables"));
         if(hit != null) {
 
             //if hit is Bottom, send to top, vice versa

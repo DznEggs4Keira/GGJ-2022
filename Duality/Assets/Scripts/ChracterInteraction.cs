@@ -8,6 +8,8 @@ public class ChracterInteraction : MonoBehaviour
     private Interactable m_Interactable;
 
     public TextMeshProUGUI interactionText;
+    public GameObject interactionHoldGO; // the ui parent to disable when not interacting
+    public UnityEngine.UI.Image interactionHoldProgress; // the progress bar for hold interaction type
 
     private bool isInteracting = false;
 
@@ -25,6 +27,8 @@ public class ChracterInteraction : MonoBehaviour
         if (m_Interactable != null) {
             isInteracting = true;
             interactionText.text = m_Interactable.GetDescription();
+
+            interactionHoldGO.SetActive(m_Interactable.interactionType == Interactable.Interactions.Hold);
         }
     }
 
@@ -50,12 +54,13 @@ public class ChracterInteraction : MonoBehaviour
                     interactable.IncreaseHoldTime();
                     if (interactable.GetHoldTime() > 1f) {
                         interactable.Interact();
+                        isInteracting = false;
                         interactable.ResetHoldTime();
                     }
                 } else {
                     interactable.ResetHoldTime();
                 }
-                    isInteracting = false;
+                interactionHoldProgress.fillAmount = interactable.GetHoldTime();
                 break;
 
             case Interactable.Interactions.Minigame:
