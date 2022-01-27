@@ -5,7 +5,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] CharacterMovement controller;
+    [SerializeField] public CharacterMovement controller;
 
     // Torchlight
     [SerializeField] Transform playerArm;

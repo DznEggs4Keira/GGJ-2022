@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class CharacterMovement : MonoBehaviour {
 
-	#region Jason
+	#region Player Movement
 
 	//Serializable Components
 	[Header("Cache Components")]
@@ -17,7 +17,7 @@ public class CharacterMovement : MonoBehaviour {
 	//Serializable private fields
 	[Header("Movement")]
 	[SerializeField] float _speed = 5f;
-	[Range(0, 1)][SerializeField] float _crouchSpeed = 0.36f;
+	[Range(0, 1)] [SerializeField] float _crouchSpeed = 0.36f;
 	[Header("Jump")]
 	[SerializeField] float _jumpVelocity = 10f;
 	[SerializeField] int _maxJumps = 2;
@@ -32,6 +32,8 @@ public class CharacterMovement : MonoBehaviour {
 	float _fallTimer;
 	float _jumpTimer;
 	float _horizontal;
+
+	public Transform PlayerFeet { get { return playerFeet; } }
 
 	//you can avoid an if entirely with
 	//bool walking = horizontal != 0; - horizontal != 0 would be true, so anything other than that would be false
@@ -163,24 +165,24 @@ public class CharacterMovement : MonoBehaviour {
 
 	public void LookAtMouse(Transform playerArm, Transform Torchlight, bool torch) {
 
-		//update arm with player direction
-		Vector3 localScale = Vector3.one;
-		if (_horizontal < 0) {
-			//flip player arm based on movement
-			localScale.x = -0.04f;
-			localScale.y = playerArm.localScale.y;
-		} else if (_horizontal > 0) {
-			localScale.x = +0.04f;
-			localScale.y = playerArm.localScale.y;
-		} else {
-			localScale.x = playerArm.localScale.x;
-			localScale.y = playerArm.localScale.y;
-        }
-
-		playerArm.localScale = localScale;
-
 		//only work if torch is on
 		if (torch) {
+
+			//update arm with player direction
+			Vector3 localScale = Vector3.one;
+			if (_horizontal < 0) {
+				//flip player arm based on movement
+				localScale.x = -0.04f;
+				localScale.y = playerArm.localScale.y;
+			} else if (_horizontal > 0) {
+				localScale.x = +0.04f;
+				localScale.y = playerArm.localScale.y;
+			} else {
+				localScale.x = playerArm.localScale.x;
+				localScale.y = playerArm.localScale.y;
+			}
+
+			playerArm.localScale = localScale;
 
 			Vector3 mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -194,21 +196,7 @@ public class CharacterMovement : MonoBehaviour {
 			} else if (angle < -90) {
 				playerArm.eulerAngles = new Vector3(0, 0, -90);
 			}
-				/*
-				Vector3 localScale = Vector3.one;
-				if (angle > 90 || angle < -90) {
-					localScale.x = playerArm.localScale.x;
-					localScale.y = -0.03f;
-					Torchlight.localEulerAngles = new Vector3(0, 0, -Torchlight.localEulerAngles.z);
-				} else {
-					localScale.x = playerArm.localScale.x;
-					localScale.y = +0.03f;
-					Torchlight.localEulerAngles = new Vector3(0, 0, Torchlight.localEulerAngles.z);
-				}
-
-				playerArm.localScale = localScale;
-				*/
-			}
+		}
 	}
 
 	#endregion

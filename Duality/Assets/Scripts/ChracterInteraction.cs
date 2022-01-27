@@ -15,7 +15,6 @@ public class ChracterInteraction : MonoBehaviour
 
         if (isInteracting && m_Interactable != null) {
             HandleInteraction(m_Interactable);
-            
         }
     }
 
@@ -47,9 +46,16 @@ public class ChracterInteraction : MonoBehaviour
             case Interactable.Interactions.Hold:
                 // if you keep the interaction button pressed
                 if (Input.GetButton("Interact")) {
-                    interactable.Interact();
-                    isInteracting = false;
+                    // we are holding the key, increase the timer until we reach 1f
+                    interactable.IncreaseHoldTime();
+                    if (interactable.GetHoldTime() > 1f) {
+                        interactable.Interact();
+                        interactable.ResetHoldTime();
+                    }
+                } else {
+                    interactable.ResetHoldTime();
                 }
+                    isInteracting = false;
                 break;
 
             case Interactable.Interactions.Minigame:
