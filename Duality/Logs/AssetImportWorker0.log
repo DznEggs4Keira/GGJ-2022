@@ -15,11 +15,11 @@ E:/ggj2022number2/Duality
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60880
+57236
 Successfully changed project path to: E:/ggj2022number2/Duality
 E:/ggj2022number2/Duality
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 81.26 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 105.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.14f1 (d0d1bb862f9d)
 [Subsystems] Discovering subsystems at path E:/Unity/2020.3.14f1/Editor/Data/Resources/UnitySubsystems
@@ -36,37 +36,37 @@ Initialize mono
 Mono path[0] = 'E:/Unity/2020.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity/2020.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/Unity/2020.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56884
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity/2020.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002638 seconds.
+Registered in 0.002702 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 81.13 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 81.19 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.762 seconds
+- Completed reload, in  1.815 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1762ms)
-		BeginReloadAssembly (147ms)
+	ReloadAssembly (1815ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (544ms)
-			LoadAssemblies (148ms)
+		EndReloadAssembly (558ms)
+			LoadAssemblies (140ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (196ms)
+			SetupTypeCache (198ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (230ms)
+			SetupLoadedEditorAssemblies (237ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (81ms)
-				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (100ms)
+				BeforeProcessingInitializeOnLoad (8ms)
+				ProcessInitializeOnLoadAttributes (106ms)
 				ProcessInitializeOnLoadMethodAttributes (37ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -74,52 +74,52 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012578 seconds.
+Registered in 0.012708 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 91.37 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 82.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.087 seconds
+- Completed reload, in  1.686 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2089ms)
-		BeginReloadAssembly (263ms)
+	ReloadAssembly (1687ms)
+		BeginReloadAssembly (253ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (1752ms)
-			LoadAssemblies (239ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1358ms)
+			LoadAssemblies (241ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (425ms)
+			SetupTypeCache (413ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (849ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (492ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (91ms)
-				BeforeProcessingInitializeOnLoad (144ms)
-				ProcessInitializeOnLoadAttributes (358ms)
-				ProcessInitializeOnLoadMethodAttributes (132ms)
-				AfterProcessingInitializeOnLoad (119ms)
+				RefreshPlugins (83ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (272ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (92ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.22 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3251 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 142.8 MB.
 System memory in use after: 143.0 MB.
 
 Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3685.
-Total: 5.540700 ms (FindLiveObjects: 0.500000 ms CreateObjectMapping: 0.270400 ms MarkObjects: 4.631600 ms  DeleteObjects: 0.136500 ms)
+Total: 3.299300 ms (FindLiveObjects: 0.368000 ms CreateObjectMapping: 0.226500 ms MarkObjects: 2.606200 ms  DeleteObjects: 0.097000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,843 +134,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Art/Willow/Willow Walking
-  artifactKey: Guid(4052183aa4ae19243a101b7b38b05750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Walking using Guid(4052183aa4ae19243a101b7b38b05750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85144e425dc1302c2551f79472a97c7a') in 0.016561 seconds 
-  Import took 0.060184 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.521249 seconds.
-  path: Assets/Art/Willow/Willow Walking/8.png
-  artifactKey: Guid(ee21f32dcf2ed0745b909d43e4d5040d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Walking/8.png using Guid(ee21f32dcf2ed0745b909d43e4d5040d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57cd5e415b2b1a42a66d36095d5445c6') in 0.297922 seconds 
-  Import took 0.334018 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Art/Willow/Willow Walking/6.png
-  artifactKey: Guid(87eeed9cc4abe2645baec0499740f3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Walking/6.png using Guid(87eeed9cc4abe2645baec0499740f3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b6911bac0b5ca04f4aee84830d448b3') in 0.040822 seconds 
-  Import took 0.110845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Art/Willow/Willow Walking/4.png
-  artifactKey: Guid(a6ca3df64d4dcb54f97b33345e84c0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Walking/4.png using Guid(a6ca3df64d4dcb54f97b33345e84c0a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce64d7f778851db9fbc1cd87bed8acde') in 0.034299 seconds 
-  Import took 0.060837 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/Art/Willow/Willow Walking/3.png
-  artifactKey: Guid(95187c21c73bdcb46bdbb29132b6c5e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Walking/3.png using Guid(95187c21c73bdcb46bdbb29132b6c5e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b986db487ffae402345086b4846cd8') in 0.032851 seconds 
-  Import took 0.053461 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/Art/Willow/Willow Walking/1.png
-  artifactKey: Guid(3e0ae509b589911499b90c2edcffd50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Walking/1.png using Guid(3e0ae509b589911499b90c2edcffd50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18613fe82b399ce72c40639989765526') in 0.041565 seconds 
-  Import took 0.075178 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Art/Willow/Willow Walking/2.png
-  artifactKey: Guid(25f4a5e84cba467428fb5035cc407350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Walking/2.png using Guid(25f4a5e84cba467428fb5035cc407350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8f1fa34dac2105206d0b76235ab976') in 0.037771 seconds 
-  Import took 0.051441 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000408 seconds.
-  path: Assets/Art/Willow/Willow Walking/7.png
-  artifactKey: Guid(e7b646a9ccc867a45ba215abd8a21ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Walking/7.png using Guid(e7b646a9ccc867a45ba215abd8a21ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d8932df8882879f2551164f34267f99') in 0.059235 seconds 
-  Import took 0.071379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000459 seconds.
-  path: Assets/Art/Willow/Willow Walking/5.png
-  artifactKey: Guid(fc798560bca4adc4db11a2969911364d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Walking/5.png using Guid(fc798560bca4adc4db11a2969911364d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc659cf58e3154f0e7d42e6b96b9cb17') in 0.044677 seconds 
-  Import took 0.091472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.383497 seconds.
-  path: Assets/Art/Willow/NO ARM willow walk
-  artifactKey: Guid(e5e26b12d64c61f489622d8fdc0f1eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow walk using Guid(e5e26b12d64c61f489622d8fdc0f1eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b5f5351133139b8a50476196a49e8a7') in 0.009741 seconds 
-  Import took 0.019924 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.320610 seconds.
-  path: Assets/Art/Willow/NO ARM willow walk/8.png
-  artifactKey: Guid(0c3b1c91e3d107b47a5d1f3de3f46dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow walk/8.png using Guid(0c3b1c91e3d107b47a5d1f3de3f46dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d8d796422c43eb0d4cac4fce1f5d5f') in 0.043721 seconds 
-  Import took 0.082225 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000338 seconds.
-  path: Assets/Art/Willow/NO ARM willow walk/2.png
-  artifactKey: Guid(a07a420bf6b3c8d43b4f9327f22d6813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow walk/2.png using Guid(a07a420bf6b3c8d43b4f9327f22d6813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccd51877dd0b6573fcdce1494207e30') in 0.036471 seconds 
-  Import took 0.048886 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Art/Willow/NO ARM willow walk/3.png
-  artifactKey: Guid(3adc166d4825e22408a5bcca4213e7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow walk/3.png using Guid(3adc166d4825e22408a5bcca4213e7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b992189a5b3a2eb23889e1fe50aca8b') in 0.035383 seconds 
-  Import took 0.131619 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000721 seconds.
-  path: Assets/Art/Willow/NO ARM willow walk/1.png
-  artifactKey: Guid(2cc9737ef57ec8e4ab32456e2d68c075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow walk/1.png using Guid(2cc9737ef57ec8e4ab32456e2d68c075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b090e0ee98585c0393a84ba6f769c427') in 0.047216 seconds 
-  Import took 0.068694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000400 seconds.
-  path: Assets/Art/Willow/NO ARM willow walk/5.png
-  artifactKey: Guid(26f2065c33a74644a8ab3e50b76ed411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow walk/5.png using Guid(26f2065c33a74644a8ab3e50b76ed411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2441005fb9aefa2ab09b555a356e705') in 0.038035 seconds 
-  Import took 0.086346 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000625 seconds.
-  path: Assets/Art/Willow/NO ARM willow walk/7.png
-  artifactKey: Guid(11fd8c5487931dc4c94b287e69db89ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow walk/7.png using Guid(11fd8c5487931dc4c94b287e69db89ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de5cf2d463515665a1a2101d996f3b81') in 0.063435 seconds 
-  Import took 0.111638 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000649 seconds.
-  path: Assets/Art/Willow/NO ARM willow walk/6.png
-  artifactKey: Guid(911154d0182461445a4e6e186079a4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow walk/6.png using Guid(911154d0182461445a4e6e186079a4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d023090bc6222647c4c54bfc48bf8fb') in 0.049367 seconds 
-  Import took 0.071621 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/Art/Willow/NO ARM willow walk/4.png
-  artifactKey: Guid(0a6e6d50c49c008488abc486525d3e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow walk/4.png using Guid(0a6e6d50c49c008488abc486525d3e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7facb6ac731c0d5e0683b8d1e5094e67') in 0.030875 seconds 
-  Import took 0.057809 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.941337 seconds.
-  path: Assets/Art/Willow/Willow back walk
-  artifactKey: Guid(fed62a77d2d281b49b5f87e8d969d590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow back walk using Guid(fed62a77d2d281b49b5f87e8d969d590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287f3d3049fbba848e538dc5b7326bdb') in 0.010686 seconds 
-  Import took 0.050778 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.211607 seconds.
-  path: Assets/Art/Willow/Willow back walk/8.png
-  artifactKey: Guid(003e2c9e23550214f8ad94910d6bc24a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow back walk/8.png using Guid(003e2c9e23550214f8ad94910d6bc24a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8bf138f1aa51cc96c60c98acaa50c19') in 0.049446 seconds 
-  Import took 0.108509 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/Art/Willow/Willow back walk/6.png
-  artifactKey: Guid(b8de883bb33a6b948b0da27a84bd6444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow back walk/6.png using Guid(b8de883bb33a6b948b0da27a84bd6444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97de7f4ba45e6e372defac37400a45fc') in 0.045001 seconds 
-  Import took 0.061010 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000420 seconds.
-  path: Assets/Art/Willow/Willow back walk/4.png
-  artifactKey: Guid(7e3881a8b4e47074faa14bf987cae6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow back walk/4.png using Guid(7e3881a8b4e47074faa14bf987cae6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7306b6ce33594cfb854048f6962665') in 0.032297 seconds 
-  Import took 0.045295 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000789 seconds.
-  path: Assets/Art/Willow/Willow back walk/1.png
-  artifactKey: Guid(a12c6a8327f2473498d700f4c0356314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow back walk/1.png using Guid(a12c6a8327f2473498d700f4c0356314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '834a5ac42cece61e7e2929c92bf11462') in 0.036314 seconds 
-  Import took 0.104037 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000543 seconds.
-  path: Assets/Art/Willow/Willow back walk/7.png
-  artifactKey: Guid(e8899460a226603478de5ecd2b1ce55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow back walk/7.png using Guid(e8899460a226603478de5ecd2b1ce55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6217fdb66afa39205202aef79c4449a1') in 0.045715 seconds 
-  Import took 0.057241 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000581 seconds.
-  path: Assets/Art/Willow/Willow back walk/2.png
-  artifactKey: Guid(993e68364633d9946b77c1f8649c8d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow back walk/2.png using Guid(993e68364633d9946b77c1f8649c8d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0daab5aa0d2a0b835971f7fbd5e080') in 0.037968 seconds 
-  Import took 0.098135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000656 seconds.
-  path: Assets/Art/Willow/Willow back walk/3.png
-  artifactKey: Guid(b19bbc5e1a088874e907e1d5b36ff441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow back walk/3.png using Guid(b19bbc5e1a088874e907e1d5b36ff441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf7d8a772af829a09094f2666ed74c16') in 0.050219 seconds 
-  Import took 0.063911 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Art/Willow/Willow back walk/5.png
-  artifactKey: Guid(abf94cfb66720b344b1f0ae59fa00a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow back walk/5.png using Guid(abf94cfb66720b344b1f0ae59fa00a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb355f25d36eecbb42585d1311230d7') in 0.035314 seconds 
-  Import took 0.059283 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.946146 seconds.
-  path: Assets/Art/Willow/NO ARM Willow walk back
-  artifactKey: Guid(af396ba39547a79429a09db6b6f1149f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM Willow walk back using Guid(af396ba39547a79429a09db6b6f1149f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b02bd59a73f78354ef0b2bcaf1a97fc') in 0.008984 seconds 
-  Import took 0.053841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.485734 seconds.
-  path: Assets/Art/Willow/NO ARM Willow walk back/7.png
-  artifactKey: Guid(50739de99db0a2244b3fe9a502464d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM Willow walk back/7.png using Guid(50739de99db0a2244b3fe9a502464d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b6fdaf35ac94bc71d7f6e5469619fa') in 0.044948 seconds 
-  Import took 0.161026 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000587 seconds.
-  path: Assets/Art/Willow/NO ARM Willow walk back/6.png
-  artifactKey: Guid(b1a91638f5e676f4081768b25633316e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM Willow walk back/6.png using Guid(b1a91638f5e676f4081768b25633316e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eede5a343a0228604234b79726376196') in 0.040529 seconds 
-  Import took 0.050912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000352 seconds.
-  path: Assets/Art/Willow/NO ARM Willow walk back/1.png
-  artifactKey: Guid(73bfa0eaa70ef094093350fbd03a818c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM Willow walk back/1.png using Guid(73bfa0eaa70ef094093350fbd03a818c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0128dd0442732b7d5b8b872c300d6e00') in 0.050612 seconds 
-  Import took 0.077079 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000542 seconds.
-  path: Assets/Art/Willow/NO ARM Willow walk back/4.png
-  artifactKey: Guid(8a22b65d62a33da4ebd50f32033fa689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM Willow walk back/4.png using Guid(8a22b65d62a33da4ebd50f32033fa689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2811646cc4e8056190fe219ef0258f6e') in 0.028610 seconds 
-  Import took 0.037814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/Art/Willow/NO ARM Willow walk back/3.png
-  artifactKey: Guid(c277fb8e56f8daa4e8dae8adc2a8ba83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM Willow walk back/3.png using Guid(c277fb8e56f8daa4e8dae8adc2a8ba83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801b57ebeffce7fd61aa73611966aeac') in 0.037409 seconds 
-  Import took 0.045840 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Art/Willow/NO ARM Willow walk back/5.png
-  artifactKey: Guid(3fb79bccce07ca9408478cff133c273f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM Willow walk back/5.png using Guid(3fb79bccce07ca9408478cff133c273f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d80b618ad2e39571d1d391da76d1b1d') in 0.035301 seconds 
-  Import took 0.093622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000694 seconds.
-  path: Assets/Art/Willow/NO ARM Willow walk back/2.png
-  artifactKey: Guid(5c0ed9a1095b32a40ab4f0261880e801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM Willow walk back/2.png using Guid(5c0ed9a1095b32a40ab4f0261880e801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '790ec8c6e70a4bdde2882b9653f76a35') in 0.044393 seconds 
-  Import took 0.073846 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004182 seconds.
-  path: Assets/Art/Willow/NO ARM Willow walk back/2.png
-  artifactKey: Guid(5c0ed9a1095b32a40ab4f0261880e801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM Willow walk back/2.png using Guid(5c0ed9a1095b32a40ab4f0261880e801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '790ec8c6e70a4bdde2882b9653f76a35') in 0.033460 seconds 
-  Import took 0.055733 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.016921 seconds.
-  path: Assets/Art/Willow/Willow front
-  artifactKey: Guid(109797dff7ea11b44896363f461104d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow front using Guid(109797dff7ea11b44896363f461104d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527d6cefa9af1352f1a72ad0dd24079c') in 0.011022 seconds 
-  Import took 0.077787 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.305629 seconds.
-  path: Assets/Art/Willow/Willow front/7.png
-  artifactKey: Guid(a458260e16f9a164e9f907c480534cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow front/7.png using Guid(a458260e16f9a164e9f907c480534cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7bf43722671d8b6e192317ef4122eb9') in 0.047895 seconds 
-  Import took 0.085392 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Art/Willow/Willow front/3.png
-  artifactKey: Guid(244ffd61b1f07654fbabfe8d2f1eb343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow front/3.png using Guid(244ffd61b1f07654fbabfe8d2f1eb343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41372edef1afec25fa8c9eca80849afd') in 0.046974 seconds 
-  Import took 0.074965 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001064 seconds.
-  path: Assets/Art/Willow/Willow front/4.png
-  artifactKey: Guid(afdb7e6150c78f749b36d441e953bda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow front/4.png using Guid(afdb7e6150c78f749b36d441e953bda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dda20a3582e66b68431700b52457f11') in 0.043699 seconds 
-  Import took 0.056718 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000338 seconds.
-  path: Assets/Art/Willow/Willow front/1.png
-  artifactKey: Guid(760861504479a204eba1406fc4b6ff2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow front/1.png using Guid(760861504479a204eba1406fc4b6ff2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49619680446aa974d383bbe6972e0329') in 0.042010 seconds 
-  Import took 0.053600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000517 seconds.
-  path: Assets/Art/Willow/Willow front/6.png
-  artifactKey: Guid(4aff8eea8b1f7b54784d1478a2ac5589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow front/6.png using Guid(4aff8eea8b1f7b54784d1478a2ac5589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d2428061a5fecbf01957d37aae5880') in 0.033381 seconds 
-  Import took 0.050041 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Art/Willow/Willow front/5.png
-  artifactKey: Guid(91a3501ac2c204741bec9b9d5096cd7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow front/5.png using Guid(91a3501ac2c204741bec9b9d5096cd7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05042f486cf3d925b8a8251fe61ecbdd') in 0.034841 seconds 
-  Import took 0.055041 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000443 seconds.
-  path: Assets/Art/Willow/Willow front/2.png
-  artifactKey: Guid(6381e4d303c2aed4aa39ac0755cefd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow front/2.png using Guid(6381e4d303c2aed4aa39ac0755cefd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e1a2bb95dafcf6b2075c303872014a4') in 0.036507 seconds 
-  Import took 0.053998 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007262 seconds.
-  path: Assets/Art/Willow/Willow front/2.png
-  artifactKey: Guid(6381e4d303c2aed4aa39ac0755cefd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow front/2.png using Guid(6381e4d303c2aed4aa39ac0755cefd41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e1a2bb95dafcf6b2075c303872014a4') in 0.034182 seconds 
-  Import took 0.044441 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.852904 seconds.
-  path: Assets/Art/Willow/NO ARM willow front
-  artifactKey: Guid(79b264898fad97249a104b5f2b6ab3eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow front using Guid(79b264898fad97249a104b5f2b6ab3eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f274981d7e47cfc905fff0f7d5fd86') in 0.011018 seconds 
-  Import took 0.018802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.638526 seconds.
-  path: Assets/Art/Willow/NO ARM willow front/7.png
-  artifactKey: Guid(c9f6567a3ff2d78479081a8f766d9e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow front/7.png using Guid(c9f6567a3ff2d78479081a8f766d9e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7b9563e105e8f209cdcef1adde7fbc') in 0.044066 seconds 
-  Import took 0.051907 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Art/Willow/NO ARM willow front/6.png
-  artifactKey: Guid(602d7a498a2966c41b8bcffbbefdf1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow front/6.png using Guid(602d7a498a2966c41b8bcffbbefdf1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'affe68a4fc4eb562337dd0661f8fc71a') in 0.046465 seconds 
-  Import took 0.055593 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Art/Willow/NO ARM willow front/3.png
-  artifactKey: Guid(207c3723203d274459e84f3cf3ca6c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow front/3.png using Guid(207c3723203d274459e84f3cf3ca6c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd036c72716b000405311234c9a494c5e') in 0.042299 seconds 
-  Import took 0.057266 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Art/Willow/NO ARM willow front/4.png
-  artifactKey: Guid(f65d915f139a521499d88001afa282eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow front/4.png using Guid(f65d915f139a521499d88001afa282eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d509ef96a8707737ea738b750d88a7f') in 0.038899 seconds 
-  Import took 0.116525 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000469 seconds.
-  path: Assets/Art/Willow/NO ARM willow front/5.png
-  artifactKey: Guid(3de78482179b0bd48986018937e309ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow front/5.png using Guid(3de78482179b0bd48986018937e309ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c59575570e781e6569914868cce58d4c') in 0.049542 seconds 
-  Import took 0.072233 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Art/Willow/NO ARM willow front/1.png
-  artifactKey: Guid(47e8dad798be04c4c8611b7ce5a5e8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow front/1.png using Guid(47e8dad798be04c4c8611b7ce5a5e8c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7871ec90eaff4ea57e5f8ca65e0a2a1') in 0.036567 seconds 
-  Import took 0.055826 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000405 seconds.
-  path: Assets/Art/Willow/NO ARM willow front/2.png
-  artifactKey: Guid(2ea67b4565fd1eb4dbdc29e41482a490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/NO ARM willow front/2.png using Guid(2ea67b4565fd1eb4dbdc29e41482a490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023b6de172ef9b11867171e76116f011') in 0.036570 seconds 
-  Import took 0.073721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.378064 seconds.
-  path: Assets/Art/Willow/torch_hand 1.png
-  artifactKey: Guid(cc9ee323b0e0ec44786fffb6cd6540a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/torch_hand 1.png using Guid(cc9ee323b0e0ec44786fffb6cd6540a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '257fa6f2c89264d47295693cb5074a35') in 0.036856 seconds 
-  Import took 0.068792 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.651938 seconds.
-  path: Assets/Art/Willow/Willow Idle
-  artifactKey: Guid(eb822e933504de74c94fd80018037ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Idle using Guid(eb822e933504de74c94fd80018037ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8435ba27576ed513d20a2e32d0504f55') in 0.008744 seconds 
-  Import took 0.029601 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.802103 seconds.
-  path: Assets/Art/Willow/Willow Idle/3.png
-  artifactKey: Guid(1e4605c572c07f44da7095564b8f7a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Idle/3.png using Guid(1e4605c572c07f44da7095564b8f7a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a94914541344bbf23aaf246e2d5c4f8') in 0.049229 seconds 
-  Import took 0.071023 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000374 seconds.
-  path: Assets/Art/Willow/Willow Idle/1.png
-  artifactKey: Guid(708d6423d5da42042b886f2473cb4452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Idle/1.png using Guid(708d6423d5da42042b886f2473cb4452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1229b9d7928fa371ee4f0e2eefe1237f') in 0.044115 seconds 
-  Import took 0.070963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000436 seconds.
-  path: Assets/Art/Willow/Willow Idle/2.png
-  artifactKey: Guid(99a0831e9de03ec4a86c1e4df59dca9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Willow/Willow Idle/2.png using Guid(99a0831e9de03ec4a86c1e4df59dca9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c972ce9425bdbbf7418708f47ca950') in 0.037065 seconds 
-  Import took 0.066212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 55.554972 seconds.
-  path: Assets/Art/Items
-  artifactKey: Guid(b1393d4ff28f34349ad77ff3a7f11fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Items using Guid(b1393d4ff28f34349ad77ff3a7f11fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78780cba8c2f7a13a0f057b466703d13') in 0.027067 seconds 
-  Import took 0.061548 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.678820 seconds.
-  path: Assets/Art/Items/item_whip.png
-  artifactKey: Guid(925006d19bb309b45a7269611f769318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Items/item_whip.png using Guid(925006d19bb309b45a7269611f769318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd7ecb48a279639be431ba078624e89') in 0.035056 seconds 
-  Import took 0.044498 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/Art/Items/item_flashlight.png
-  artifactKey: Guid(0891e217ab44fe747a78711858149be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Items/item_flashlight.png using Guid(0891e217ab44fe747a78711858149be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fcf636d79a8fcb0d1f3e0b9618be424') in 0.036165 seconds 
-  Import took 0.048930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000423 seconds.
-  path: Assets/Art/Items/item_whip.png
-  artifactKey: Guid(925006d19bb309b45a7269611f769318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Items/item_whip.png using Guid(925006d19bb309b45a7269611f769318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd7ecb48a279639be431ba078624e89') in 0.055170 seconds 
-  Import took 0.065392 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000341 seconds.
-  path: Assets/Art/Items/item_flowers.png
-  artifactKey: Guid(b41542e3a78e71a4786cab84b857086c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Items/item_flowers.png using Guid(b41542e3a78e71a4786cab84b857086c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d068758befe14e135778512f343f827') in 0.039155 seconds 
-  Import took 0.100427 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000634 seconds.
-  path: Assets/Art/Items/item_eyeballs.png
-  artifactKey: Guid(70aaafa46a46b2c45bb39da5fae305dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Items/item_eyeballs.png using Guid(70aaafa46a46b2c45bb39da5fae305dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39677b0aaac6f953da046fc68a2c890') in 0.061981 seconds 
-  Import took 0.101322 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.424937 seconds.
-  path: Assets/Art/House/wall_painted_number.png
-  artifactKey: Guid(97fe31cc1d7e0b34081820bbacfe6be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/House/wall_painted_number.png using Guid(97fe31cc1d7e0b34081820bbacfe6be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a36130623782a3e6883b6ba489704ba') in 0.053249 seconds 
-  Import took 0.061057 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.731193 seconds.
-  path: Assets/Art/House/Stairs
-  artifactKey: Guid(b6b2afbdd118c324293add1e30b3f007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/House/Stairs using Guid(b6b2afbdd118c324293add1e30b3f007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6736fd2459daebf465c4a34dfa7301bb') in 0.010687 seconds 
-  Import took 0.063890 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.176073 seconds.
-  path: Assets/Art/House/Stairs/wooden_beam_front.png
-  artifactKey: Guid(5aafa800601abb846a7e90b504339987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/House/Stairs/wooden_beam_front.png using Guid(5aafa800601abb846a7e90b504339987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352165bc27cb281dddf91c73a3373ec9') in 0.038339 seconds 
-  Import took 0.064079 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Art/House/Stairs/staircase_railing_kitchen.png
-  artifactKey: Guid(4a8747220ebbba54fb0fc836946ac0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/House/Stairs/staircase_railing_kitchen.png using Guid(4a8747220ebbba54fb0fc836946ac0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0ca13fa47fab78d79c9da8a766da12') in 0.040185 seconds 
-  Import took 0.131101 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000684 seconds.
-  path: Assets/Art/House/Stairs/staircase_railing_attic.png
-  artifactKey: Guid(19c86686eaaee8946b51227adcdef9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/House/Stairs/staircase_railing_attic.png using Guid(19c86686eaaee8946b51227adcdef9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80283364e10b2d8d7838faacc40be58c') in 0.045139 seconds 
-  Import took 0.063656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Art/House/Stairs/staircase_cellar.png
-  artifactKey: Guid(ec1f1d80f009bb042accc5d84fd6eaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/House/Stairs/staircase_cellar.png using Guid(ec1f1d80f009bb042accc5d84fd6eaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3e2d0029e97e0d1059e2ae85e130fa') in 0.038920 seconds 
-  Import took 0.048178 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000502 seconds.
-  path: Assets/Art/House/Stairs/staircase_kitchen.png
-  artifactKey: Guid(bef7122a6cd55894fad77e19950e96df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/House/Stairs/staircase_kitchen.png using Guid(bef7122a6cd55894fad77e19950e96df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f236c18a21ec2d958df7b8e4ef71fbc8') in 0.034703 seconds 
-  Import took 0.060427 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000683 seconds.
-  path: Assets/Art/House/Stairs/staircase_attic.png
-  artifactKey: Guid(70ac583954f32484a98828cdcd764d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/House/Stairs/staircase_attic.png using Guid(70ac583954f32484a98828cdcd764d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c481d42c14ac56c840537f605b8b6c62') in 0.032512 seconds 
-  Import took 0.056267 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002158 seconds.
-  path: Assets/Art/House/Stairs/staircase_attic.png
-  artifactKey: Guid(70ac583954f32484a98828cdcd764d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/House/Stairs/staircase_attic.png using Guid(70ac583954f32484a98828cdcd764d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c481d42c14ac56c840537f605b8b6c62') in 0.026735 seconds 
-  Import took 0.041846 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013390 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.804 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1804ms)
-		BeginReloadAssembly (207ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1524ms)
-			LoadAssemblies (244ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (744ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (63ms)
-			SetupLoadedEditorAssemblies (379ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (274ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3123 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 137.1 MB.
-System memory in use after: 137.3 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3753.
-Total: 3.246200 ms (FindLiveObjects: 0.365400 ms CreateObjectMapping: 0.204200 ms MarkObjects: 2.636900 ms  DeleteObjects: 0.037900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 3730.845471 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.031104 seconds 
-  Import took 0.054873 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.914549 seconds.
-  path: Assets/MUSIC AND SOUND
-  artifactKey: Guid(25bad6861b100e64bb280d66b0632090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MUSIC AND SOUND using Guid(25bad6861b100e64bb280d66b0632090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0e06984f941b3cf981fe67d502b106d') in 0.011195 seconds 
-  Import took 0.033405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.012853 seconds.
-  path: Assets/MUSIC AND SOUND/MUSIC
-  artifactKey: Guid(3c2df43fc3444da41bc2ba83a26e937b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MUSIC AND SOUND/MUSIC using Guid(3c2df43fc3444da41bc2ba83a26e937b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d9003b66fee68167a95f8d9d239acfb') in 0.010365 seconds 
-  Import took 0.033771 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.165182 seconds.
-  path: Assets/MUSIC AND SOUND/MUSIC/Metre - Empty House.mp3
-  artifactKey: Guid(0e0327eb91308b74484df0e22d4c2b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MUSIC AND SOUND/MUSIC/Metre - Empty House.mp3 using Guid(0e0327eb91308b74484df0e22d4c2b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd03044f953005b5abdd9e2da1b625a8c') in 0.298283 seconds 
-  Import took 0.310033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000490 seconds.
-  path: Assets/MUSIC AND SOUND/MUSIC/Elevator music sort of royalty free check description.mp3
-  artifactKey: Guid(18d0f121549ca00458342541bb3f68f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MUSIC AND SOUND/MUSIC/Elevator music sort of royalty free check description.mp3 using Guid(18d0f121549ca00458342541bb3f68f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de677b8f390caf9f1d05df8e880b23ba') in 0.029918 seconds 
-  Import took 0.040488 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.464317 seconds.
-  path: Assets/MUSIC AND SOUND/SOUNDS
-  artifactKey: Guid(0c139ff65175222488c7032902f0d0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MUSIC AND SOUND/SOUNDS using Guid(0c139ff65175222488c7032902f0d0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1f7dff5414748cc11cb0364df549cf') in 0.011053 seconds 
-  Import took 0.041840 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 32.900995 seconds.
-  path: Assets/MUSIC AND SOUND/SOUNDS/magical-dissipating-effect.wav
-  artifactKey: Guid(a4dc657540d668f40abda4964f819e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MUSIC AND SOUND/SOUNDS/magical-dissipating-effect.wav using Guid(a4dc657540d668f40abda4964f819e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b0cc23edbcc9ff72b0e8c795b7f158') in 0.032394 seconds 
-  Import took 0.042228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001976 seconds.
-  path: Assets/MUSIC AND SOUND/SOUNDS/_flashlight-on.wav
-  artifactKey: Guid(553dd95c6952e8a4ca48d51894554564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MUSIC AND SOUND/SOUNDS/_flashlight-on.wav using Guid(553dd95c6952e8a4ca48d51894554564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de787b9ef8327679023908e4f92c01ee') in 0.085486 seconds 
-  Import took 0.098423 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000353 seconds.
-  path: Assets/MUSIC AND SOUND/SOUNDS/door-front-opening-a.wav
-  artifactKey: Guid(3a1165a2e7b5ab04da7f1942fc3a2822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MUSIC AND SOUND/SOUNDS/door-front-opening-a.wav using Guid(3a1165a2e7b5ab04da7f1942fc3a2822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d0bc05f025003b037a5032da5b837a') in 0.027017 seconds 
-  Import took 0.073602 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1645.698572 seconds.
-  path: Assets/Art/UI
-  artifactKey: Guid(f5cef966b26b3e749b327a68a1bee9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI using Guid(f5cef966b26b3e749b327a68a1bee9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d3fe2f1692fb23d57bdd6213ee59b45') in 0.010023 seconds 
-  Import took 0.044936 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004366 seconds.
-  path: Assets/Art/UI
-  artifactKey: Guid(f5cef966b26b3e749b327a68a1bee9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI using Guid(f5cef966b26b3e749b327a68a1bee9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d3fe2f1692fb23d57bdd6213ee59b45') in 0.010797 seconds 
-  Import took 0.034510 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.121447 seconds.
-  path: Assets/Art/UI/unlocked_ui.png
-  artifactKey: Guid(56acc791f284e1646b1e1d044e5dc606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/unlocked_ui.png using Guid(56acc791f284e1646b1e1d044e5dc606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f120508f2101f1b6415481c04cd162e') in 0.110333 seconds 
-  Import took 0.141434 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000391 seconds.
-  path: Assets/Art/UI/logo_whoisgrama.png
-  artifactKey: Guid(af902ca3ec0051b4c9221d812c01ef04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/logo_whoisgrama.png using Guid(af902ca3ec0051b4c9221d812c01ef04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6807d57c3044131429adf135c0b4ffb5') in 0.050599 seconds 
-  Import took 0.091479 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000475 seconds.
-  path: Assets/Art/UI/play_button.png
-  artifactKey: Guid(0f816b415378dc2409230a0ab5820d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/play_button.png using Guid(0f816b415378dc2409230a0ab5820d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f29a4b406c97cbfe46a2d27cfc7ee1d') in 0.039397 seconds 
-  Import took 0.072036 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/Art/UI/locked_ui.png
-  artifactKey: Guid(16192973926d4a346bbd7be9594ee9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/locked_ui.png using Guid(16192973926d4a346bbd7be9594ee9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da3ba49548717eee8520a1f415e00af8') in 0.051780 seconds 
-  Import took 0.090730 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000621 seconds.
-  path: Assets/Art/UI/text_box1.png
-  artifactKey: Guid(c00ec842d9e66c649af9326c3671b1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/text_box1.png using Guid(c00ec842d9e66c649af9326c3671b1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899872c5019ccb96d85e9082e715cbca') in 0.053218 seconds 
-  Import took 0.078817 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Art/UI/exit_button.png
-  artifactKey: Guid(9215ed7d0b5ffdd47887a15a5e9300e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/exit_button.png using Guid(9215ed7d0b5ffdd47887a15a5e9300e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2ef9864cecc8d2542c8f981e45fc79b') in 0.041500 seconds 
-  Import took 0.070014 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000462 seconds.
-  path: Assets/Art/UI/interact_E_textbox.png
-  artifactKey: Guid(f05ec2e3138f5cc4fa8655fa32fcdc90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/interact_E_textbox.png using Guid(f05ec2e3138f5cc4fa8655fa32fcdc90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a606a11dec282a0d4e7d9e52edda3f9c') in 0.036831 seconds 
-  Import took 0.059167 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/Art/UI/loading_empty.png
-  artifactKey: Guid(04f8d5ab9e75ca140bea51987058f8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/loading_empty.png using Guid(04f8d5ab9e75ca140bea51987058f8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '111f9c72b79b1d73a929c8b4262dfe98') in 0.035858 seconds 
-  Import took 0.059391 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000382 seconds.
-  path: Assets/Art/UI/text_box2.png
-  artifactKey: Guid(2c2fc79da89b0af428102fc39a0329f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/text_box2.png using Guid(2c2fc79da89b0af428102fc39a0329f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c0fb22aef3a5b78b574574a3d6417f') in 0.039769 seconds 
-  Import took 0.055595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/Art/UI/credit_button.png
-  artifactKey: Guid(a272ece57f1132546ba1f05b7c10ccaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/credit_button.png using Guid(a272ece57f1132546ba1f05b7c10ccaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e5f1e7ff2b83b3131362e284030ebc') in 0.043012 seconds 
-  Import took 0.051878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000383 seconds.
-  path: Assets/Art/UI/talktograma_E_textbox.png
-  artifactKey: Guid(7d5a4e103774e2a4b9acc498361a4e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/talktograma_E_textbox.png using Guid(7d5a4e103774e2a4b9acc498361a4e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f18fb45ca6987d3a7b4ffb80ad2600f') in 0.034689 seconds 
-  Import took 0.045830 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Art/UI/exclamation_text_box.png
-  artifactKey: Guid(367287e3613a049429a48502c51b5019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/exclamation_text_box.png using Guid(367287e3613a049429a48502c51b5019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '455620584fb595b7616c93daabd46770') in 0.036704 seconds 
-  Import took 0.049210 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000303 seconds.
-  path: Assets/Art/UI/loading_full.png
-  artifactKey: Guid(27823866848238a409057359cf971a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/loading_full.png using Guid(27823866848238a409057359cf971a38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4119c281be5f28b419b79369a7c0bba8') in 0.030419 seconds 
-  Import took 0.038924 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.476471 seconds.
-  path: Assets/Art/UI/ui_design.zip
-  artifactKey: Guid(f430d6a4323ccd243821915db2dbfae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/UI/ui_design.zip using Guid(f430d6a4323ccd243821915db2dbfae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b15bdbc630c754364c977e725f59fdb0') in 0.023580 seconds 
-  Import took 0.138459 seconds .
+  path: Assets/Art/FONT_Please write me a song.ttf
+  artifactKey: Guid(a1f2199fcd97b604fb0a5a2136549353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/FONT_Please write me a song.ttf using Guid(a1f2199fcd97b604fb0a5a2136549353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d85d93159d8ab0c544b6b590e6e2ca') in 0.612999 seconds 
+  Import took 0.651991 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
