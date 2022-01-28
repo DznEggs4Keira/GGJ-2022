@@ -11,6 +11,12 @@ public class Door : Interactable
     }
 
     public override void Interact() {
+        //Fade the Overlay
+        //Fade the Door
+        //Disable Door Trigger
+        //Enable Room
+        //Enable Exit Trigger
+
         StartCoroutine(FadeOverlay());
     }
 
