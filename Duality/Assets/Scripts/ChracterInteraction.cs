@@ -1,39 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ChracterInteraction : MonoBehaviour
 {
-    public float interactionDistance;
+    private Interactable m_Interactable;
 
-    public TMPro.TextMeshProUGUI interactionText;
+    public TextMeshProUGUI interactionText;
+    public GameObject interactionHoldGO; // the ui parent to disable when not interacting
+    public UnityEngine.UI.Image interactionHoldProgress; // the progress bar for hold interaction type
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private bool isInteracting = false;
+
+    private void Update() {
+
+        if (isInteracting && m_Interactable != null) {
+            HandleInteraction(m_Interactable);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2f, Screen.height / 2f));
-        RaycastHit hit;
+    private void OnTriggerEnter2D(Collider2D collision) {
 
-        bool successfulHit = false;
+        m_Interactable = collision.GetComponentInParent<Interactable>();
 
-        if(Physics.Raycast(ray, out hit, interactionDistance)) {
-            Interactable interactable = hit.collider.GetComponent<Interactable>();
+        if (m_Interactable != null) {
+            isInteracting = true;
+            interactionText.text = m_Interactable.GetDescription();
 
-            if(interactable != null) {
-                HandleInteraction(interactable);
-                interactionText.text = interactable.GetDescription();
-                successfulHit = true;
-            }
+            interactionHoldGO.SetActive(m_Interactable.interactionType == Interactable.Interactions.Hold);
         }
+    }
 
-        if (!successfulHit) interactionText.text = "";
-
+    private void OnTriggerExit2D(Collider2D collision) {
+        isInteracting = false;
+        interactionText.text = "";
     }
 
     private void HandleInteraction(Interactable interactable) {
@@ -42,18 +43,29 @@ public class ChracterInteraction : MonoBehaviour
                 //if you tap the interaction button
                 if(Input.GetButtonDown("Interact")) {
                     interactable.Interact();
+                    isInteracting = false;
                 }
                 break;
 
             case Interactable.Interactions.Hold:
                 // if you keep the interaction button pressed
                 if (Input.GetButton("Interact")) {
-                    interactable.Interact();
+                    // we are holding the key, increase the timer until we reach 1f
+                    interactable.IncreaseHoldTime();
+                    if (interactable.GetHoldTime() > 1f) {
+                        interactable.Interact();
+                        isInteracting = false;
+                        interactable.ResetHoldTime();
+                    }
+                } else {
+                    interactable.ResetHoldTime();
                 }
+                interactionHoldProgress.fillAmount = interactable.GetHoldTime();
                 break;
 
             case Interactable.Interactions.Minigame:
                 // call a minigame function for solving the puzzle?
+                isInteracting = false;
                 break;
 
             default:
