@@ -2453,8 +2453,9 @@ MonoBehaviour:
   m_dialogue:
     m_Name: Hint dialogue FLOWERS
     m_sentences:
-    - Dear, I believe the first item consist of three parts and is a representative
-      of nature itself. Like the sun, you should try looking for it in high places.
+    - 'Dear, I believe the first item consist of three parts and is a representative
+      of nature itself. '
+    - Like the sun, you should try looking for it in high places.
   animator: {fileID: 6275406102075388257}
 --- !u!1 &1319164713
 GameObject:
@@ -3501,6 +3502,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4058138490613325400, guid: 53393e2e32197044ab02e9c968902dff, type: 3}
   m_PrefabInstance: {fileID: 1845444406}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1912380122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1912380123}
+  - component: {fileID: 1912380124}
+  m_Layer: 8
+  m_Name: ULTRA VIOLET
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1912380123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912380122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 864709771940481050}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1912380124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912380122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 6275406102075388256}
+  dialogueText: {fileID: 6275406102075388255}
+  m_dialogue:
+    m_Name: 
+    m_sentences:
+    - "Finally! After all these years in this shrivelled raisin of a meatsack\u2026
+      it has been completed!"
+    - ...
+    - "You see\u2026 years ago, I girlbossed too close to the sun and I was punished
+      with this old, wrinkly, broken body. "
+    - But now, my curse is finally lifted, and I can RAVE again!
+    - ...
+    - "Enjoy your knitting, Willow, I\u2019m OUT!"
+  animator: {fileID: 6275406102075388257}
 --- !u!1 &1932593916
 GameObject:
   m_ObjectHideFlags: 0
@@ -4131,7 +4189,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_dialogue.m_sentences.Array.size
-      value: 11
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_dialogue.m_sentences.Array.data[0]
@@ -4144,56 +4202,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_dialogue.m_sentences.Array.data[2]
-      value: "I am very proud of you sweetheart\u2026. Not that long ago you were
-        just a little pumpkin stumbling about in the herb garden and now look at
-        you"
+      value: "I am very proud of you sweetheart\u2026. "
       objectReference: {fileID: 0}
     - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_dialogue.m_sentences.Array.data[3]
+      value: Not that long ago you were just a little pumpkin stumbling about in
+        the herb garden and now look at you
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_dialogue.m_sentences.Array.data[4]
       value: "Are you excited to finally become the witch you\u2019ve always wanted
         to be?"
       objectReference: {fileID: 0}
     - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[4]
-      value: "Now, love, before we can start your Ritual Assessment tonight. There
-        are a couple of things we still need\u2026. Hmm\u2026 they should be around
-        the house\u2026 somewhere..."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_dialogue.m_sentences.Array.data[5]
-      value: Oh! I know something that might be able to help us find them. Willow,
-        please unlock the safety deposit box in the living room. Then come back,
-        so I can explain how this particular item will help you.
+      value: "Now, love, before we can start your Ritual Assessment tonight. There
+        are a couple of things we still need\u2026. "
       objectReference: {fileID: 0}
     - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_dialogue.m_sentences.Array.data[6]
-      value: ...
+      value: "Hmm\u2026 they should be around the house\u2026 somewhere..."
       objectReference: {fileID: 0}
     - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_dialogue.m_sentences.Array.data[7]
-      value: "Hmm. The code to unlock the safe\u2026what was it..."
+      value: 'Oh! I know something that might be able to help us find them. Willow,
+        please unlock the safety deposit box in the living room. '
       objectReference: {fileID: 0}
     - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_dialogue.m_sentences.Array.data[8]
+      value: Then come back, so I can explain how this particular item will help
+        you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_dialogue.m_sentences.Array.data[9]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_dialogue.m_sentences.Array.data[10]
+      value: "Hmm. The code to unlock the safe\u2026what was it..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_dialogue.m_sentences.Array.data[11]
       value: "Ah yes\u2026. It\u2019s \u2026. It\u2019s\u2026. hold on, one moment
         dear, the old noggin\u2019 isn\u2019t that sharp anymore\u2026hmm..."
       objectReference: {fileID: 0}
     - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[9]
+      propertyPath: m_dialogue.m_sentences.Array.data[12]
       value: "I wrote it down\u2026somewhere."
       objectReference: {fileID: 0}
     - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[10]
-      value: "If I remember correctly\u2026. The code should be somewhere\u2026.
-        On the walls?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[11]
-      value: "If I remember correctly\u2026. The code should be somewhere\u2026.
-        On the walls?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[12]
+      propertyPath: m_dialogue.m_sentences.Array.data[13]
       value: "If I remember correctly\u2026. The code should be somewhere\u2026.
         On the walls?"
       objectReference: {fileID: 0}
