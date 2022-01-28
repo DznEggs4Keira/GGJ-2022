@@ -17,13 +17,10 @@ public class Door : Interactable
         //Enable Room
         //Enable Exit Trigger
 
-        StartCoroutine(FadeOverlay());
+        //StartCoroutine(FadeOverlay());
     }
 
     IEnumerator FadeOverlay() {
-        while (OverlaySR.color.a != 0f) {
-            OverlaySR.color = new Color(OverlaySR.color.r, OverlaySR.color.g, OverlaySR.color.b, OverlaySR.color.a - Time.deltaTime);
-        }
         yield return null;
     }
 }
