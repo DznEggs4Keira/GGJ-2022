@@ -5,9 +5,10 @@ using UnityEngine;
 public abstract class Interactable : MonoBehaviour
 {
     public enum Interactions {
-        Pickup,     //Click to pickup and item or talk to someone
-        Hold,       //Open Doors and carry objects
-        Minigame    // Puzzle Minigame
+        Talk,   // Talk to someone
+        Pickup, //Click to pickup and item
+        Hold_Open, //Open Doors
+        Minigame  // Puzzle Minigame
     }
 
     float holdTime;

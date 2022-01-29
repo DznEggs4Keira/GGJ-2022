@@ -28,7 +28,7 @@ public class ChracterInteraction : MonoBehaviour
             isInteracting = true;
             interactionText.text = m_Interactable.GetDescription();
 
-            interactionHoldGO.SetActive(m_Interactable.interactionType == Interactable.Interactions.Hold);
+            interactionHoldGO.SetActive(m_Interactable.interactionType == Interactable.Interactions.Hold_Open);
         }
     }
 
@@ -39,7 +39,7 @@ public class ChracterInteraction : MonoBehaviour
 
     private void HandleInteraction(Interactable interactable) {
         switch (interactable.interactionType) {
-            case Interactable.Interactions.Pickup:
+            case Interactable.Interactions.Talk:
                 //if you tap the interaction button
                 if(Input.GetButtonDown("Interact")) {
                     interactable.Interact();
@@ -47,7 +47,15 @@ public class ChracterInteraction : MonoBehaviour
                 }
                 break;
 
-            case Interactable.Interactions.Hold:
+            case Interactable.Interactions.Pickup:
+                //if you tap the interaction button
+                if (Input.GetButtonDown("Interact")) {
+                    interactable.Interact();
+                    isInteracting = false;
+                }
+                break;
+
+            case Interactable.Interactions.Hold_Open:
                 // if you keep the interaction button pressed
                 if (Input.GetButton("Interact")) {
                     // we are holding the key, increase the timer until we reach 1f
@@ -64,7 +72,7 @@ public class ChracterInteraction : MonoBehaviour
                 break;
 
             case Interactable.Interactions.Minigame:
-                // call a minigame function for solving the puzzle?
+                // Show Safe Code UI
                 isInteracting = false;
                 break;
 
