@@ -373,6 +373,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionType: 0
+  GrandmaDialogues:
+  - {fileID: 2771589063754709618}
+  - {fileID: 872609034}
+  - {fileID: 0}
+  - {fileID: 1248576262}
+  - {fileID: 0}
+  - {fileID: 1994728194}
+  - {fileID: 0}
+  - {fileID: 353273379}
+  - {fileID: 0}
+  - {fileID: 1912380124}
 --- !u!1 &4349750598093201138
 GameObject:
   m_ObjectHideFlags: 0

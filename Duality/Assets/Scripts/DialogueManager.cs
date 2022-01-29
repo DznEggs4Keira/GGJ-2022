@@ -5,6 +5,7 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
@@ -56,5 +57,6 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("isOpen", false);
 
         Debug.Log("End of conversation");
+        Grandma.checkpoint++;
     }
 }

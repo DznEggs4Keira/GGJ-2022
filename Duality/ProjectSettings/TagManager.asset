@@ -47,6 +47,9 @@ TagManager:
   - name: UV
     uniqueID: 2761767221
     locked: 0
+  - name: Player
+    uniqueID: 839375303
+    locked: 0
   - name: Foreground
     uniqueID: 1976174761
     locked: 0
