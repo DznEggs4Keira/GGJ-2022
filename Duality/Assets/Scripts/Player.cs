@@ -34,9 +34,9 @@ public class Player : MonoBehaviour
             playerArm.gameObject.SetActive(torch);
         }
 
-        if(playerArm.gameObject.activeInHierarchy) {
+        if(torch) {
             GetComponentInChildren<Light2D>().enabled = torch;
-            controller.LookAtMouse(playerArm, Torchlight, torch);
+            controller.LookAtMouse(playerArm);
         }
     }
 

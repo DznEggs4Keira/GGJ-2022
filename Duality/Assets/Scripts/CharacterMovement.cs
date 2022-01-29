@@ -29,6 +29,7 @@ public class CharacterMovement : MonoBehaviour {
 	int _jumpsRemaining;
 	bool isGrounded = true;
 	bool isCrouching = false;
+	bool isWalking = false;
 	float _fallTimer;
 	float _jumpTimer;
 	float _horizontal;
@@ -133,12 +134,16 @@ public class CharacterMovement : MonoBehaviour {
 		// Set the animation of player based on movement
 		playerAnim.SetBool("isJumping", !isGrounded);
 		playerAnim.SetBool("isCrouching", isCrouching);
+		playerAnim.SetBool("isWalking", isWalking);
 
 		//playerAnim.SetBool("isWalking", _horizontal != 0);
 		if (_horizontal != 0) {
+			isWalking = true;
 			//flip player model based on movement
 			playerSR.flipX = _horizontal < 0;
-		}
+		} else {
+			isWalking = false;
+        }
 			
 	}
 
@@ -163,39 +168,35 @@ public class CharacterMovement : MonoBehaviour {
 		playerRB.velocity = Vector2.zero;
 	}
 
-	public void LookAtMouse(Transform playerArm, Transform Torchlight, bool torch) {
+	public void LookAtMouse(Transform playerArm) {
 
-		//only work if torch is on
-		if (torch) {
+		//update arm with player direction
+		Vector3 localScale = Vector3.one;
+		if (_horizontal < 0) {
+			//flip player arm based on movement
+			localScale.x = -0.04f;
+			localScale.y = playerArm.localScale.y;
+		} else if (_horizontal > 0) {
+			localScale.x = +0.04f;
+			localScale.y = playerArm.localScale.y;
+		} else {
+			localScale.x = playerArm.localScale.x;
+			localScale.y = playerArm.localScale.y;
+		}
 
-			//update arm with player direction
-			Vector3 localScale = Vector3.one;
-			if (_horizontal < 0) {
-				//flip player arm based on movement
-				localScale.x = -0.04f;
-				localScale.y = playerArm.localScale.y;
-			} else if (_horizontal > 0) {
-				localScale.x = +0.04f;
-				localScale.y = playerArm.localScale.y;
-			} else {
-				localScale.x = playerArm.localScale.x;
-				localScale.y = playerArm.localScale.y;
-			}
+		playerArm.localScale = localScale;
 
-			playerArm.localScale = localScale;
+		Vector3 mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-			Vector3 mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		Vector3 aimDirection = (mouse_position - transform.position).normalized;
+		float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+		playerArm.eulerAngles = new Vector3(0, 0, angle);
 
-			Vector3 aimDirection = (mouse_position - transform.position).normalized;
-			float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-			playerArm.eulerAngles = new Vector3(0, 0, angle);
+		if (angle > 90) {
+			playerArm.eulerAngles = new Vector3(0, 0, 90);
 
-			if (angle > 90) {
-				playerArm.eulerAngles = new Vector3(0, 0, 90);
-
-			} else if (angle < -90) {
-				playerArm.eulerAngles = new Vector3(0, 0, -90);
-			}
+		} else if (angle < -90) {
+			playerArm.eulerAngles = new Vector3(0, 0, -90);
 		}
 	}
 
