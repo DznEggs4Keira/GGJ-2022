@@ -7998,6 +7998,39 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 7874186818498648958, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_dialogue.m_sentences.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_dialogue.m_sentences.Array.data[7]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_dialogue.m_sentences.Array.data[8]
+      value: "If I remember correctly\u2026. The code should be somewhere\u2026.
+        On the walls?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_dialogue.m_sentences.Array.data[9]
+      value: "If I remember correctly\u2026. The code should be somewhere\u2026.
+        On the walls?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_dialogue.m_sentences.Array.data[10]
+      value: "If I remember correctly\u2026. The code should be somewhere\u2026.
+        On the walls?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_dialogue.m_sentences.Array.data[11]
+      value: "If I remember correctly\u2026. The code should be somewhere\u2026.
+        On the walls?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_dialogue.m_sentences.Array.data[12]
+      value: "If I remember correctly\u2026. The code should be somewhere\u2026.
+        On the walls?"
+      objectReference: {fileID: 0}
     - target: {fileID: 2771589063754709620, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_Name
       value: Grandma Violet
@@ -8070,7 +8103,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1699094422}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 872609034, guid: 8c595815095300043a1a28006270f3cd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8c595815095300043a1a28006270f3cd, type: 3}
 --- !u!114 &6275406102075388255 stripped
 MonoBehaviour:
