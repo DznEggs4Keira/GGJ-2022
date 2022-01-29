@@ -41,9 +41,6 @@ TagManager:
   - name: Background
     uniqueID: 803158547
     locked: 0
-  - name: TestRoom
-    uniqueID: 1028036591
-    locked: 0
   - name: UV
     uniqueID: 2761767221
     locked: 0

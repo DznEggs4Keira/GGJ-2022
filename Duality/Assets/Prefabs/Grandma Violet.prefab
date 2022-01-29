@@ -1,5 +1,266 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &353273377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 353273378}
+  - component: {fileID: 353273379}
+  m_Layer: 8
+  m_Name: HintDialogue4 FOR THIRD ITEM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &353273378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353273377}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6563618693745998148}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &353273379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353273377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 1681854184500839950}
+  dialogueText: {fileID: 1681854184821204225}
+  m_dialogue:
+    m_Name: Hint dialogue JAR OF EYEBALLS
+    m_sentences:
+    - This item is foul and slimy.  Hidden away in the depths.
+  animator: {fileID: 5738671628984816070}
+--- !u!1 &872609032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 872609033}
+  - component: {fileID: 872609034}
+  m_Layer: 8
+  m_Name: HintDialogue1 FOR FLASHLIGHT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &872609033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872609032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6563618693745998148}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &872609034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872609032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 1681854184500839950}
+  dialogueText: {fileID: 1681854184821204225}
+  m_dialogue:
+    m_Name: Hint dialogue 1 CODE FOR SAFE
+    m_sentences:
+    - "It should be\u2026. On the walls\u2026 I believe I hung something in front
+      of it\u2026"
+  animator: {fileID: 5738671628984816070}
+--- !u!1 &1248576260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1248576261}
+  - component: {fileID: 1248576262}
+  m_Layer: 8
+  m_Name: HintDialogue2 FOR FIRST ITEM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1248576261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248576260}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6563618693745998148}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1248576262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248576260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 1681854184500839950}
+  dialogueText: {fileID: 1681854184821204225}
+  m_dialogue:
+    m_Name: Hint dialogue FLOWERS
+    m_sentences:
+    - 'Dear, I believe the first item consist of three parts and is a representative
+      of nature itself. '
+    - Like the sun, you should try looking for it in high places.
+  animator: {fileID: 5738671628984816070}
+--- !u!1 &1912380122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1912380123}
+  - component: {fileID: 1912380124}
+  m_Layer: 8
+  m_Name: ULTRA VIOLET
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1912380123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912380122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6563618693745998148}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1912380124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912380122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 1681854184500839950}
+  dialogueText: {fileID: 1681854184821204225}
+  m_dialogue:
+    m_Name: 
+    m_sentences:
+    - "Finally! After all these years in this shrivelled raisin of a meatsack\u2026
+      it has been completed!"
+    - ...
+    - "You see\u2026 years ago, I girlbossed too close to the sun and I was punished
+      with this old, wrinkly, broken body. "
+    - But now, my curse is finally lifted, and I can RAVE again!
+    - ...
+    - "Enjoy your knitting, Willow, I\u2019m OUT!"
+  animator: {fileID: 5738671628984816070}
+--- !u!1 &1994728192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1994728193}
+  - component: {fileID: 1994728194}
+  m_Layer: 8
+  m_Name: HintDialogue3 FOR SECOND ITEM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1994728193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994728192}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6563618693745998148}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1994728194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994728192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 1681854184500839950}
+  dialogueText: {fileID: 1681854184821204225}
+  m_dialogue:
+    m_Name: Hint dialogue WHIP
+    m_sentences:
+    - "This item would probably\u2026. be hidden away. Easily accessible in a comfortable
+      space\u2026but kept away from prying eyes"
+  animator: {fileID: 5738671628984816070}
 --- !u!1 &2771589063754709620
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,6 +293,11 @@ Transform:
   m_Children:
   - {fileID: 1681854183426430525}
   - {fileID: 691943293638731628}
+  - {fileID: 872609033}
+  - {fileID: 1248576261}
+  - {fileID: 1994728193}
+  - {fileID: 353273378}
+  - {fileID: 1912380123}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73,10 +339,26 @@ MonoBehaviour:
   m_dialogue:
     m_Name: Grandma Violet
     m_sentences:
-    - HI!
-    - I'm Grandma
-    - I may just look like a blob for now, but i am indeed....
-    - Grandma
+    - "There you are sweetheart, come, come, I\u2019ve made brownies for today\u2019s
+      special occasion!"
+    - "We can\u2019t have you go hungry now"
+    - "I am very proud of you sweetheart\u2026. "
+    - Not that long ago you were just a little pumpkin stumbling about in the herb
+      garden and now look at you
+    - "Are you excited to finally become the witch you\u2019ve always wanted to be?"
+    - "Now, love, before we can start your Ritual Assessment tonight. There are a
+      couple of things we still need\u2026. "
+    - "Hmm\u2026 they should be around the house\u2026 somewhere..."
+    - 'Oh! I know something that might be able to help us find them. Willow, please
+      unlock the safety deposit box in the living room. '
+    - Then come back, so I can explain how this particular item will help you.
+    - ...
+    - "Hmm. The code to unlock the safe\u2026what was it..."
+    - "Ah yes\u2026. It\u2019s \u2026. It\u2019s\u2026. hold on, one moment dear,
+      the old noggin\u2019 isn\u2019t that sharp anymore\u2026hmm..."
+    - "I wrote it down\u2026somewhere."
+    - "If I remember correctly\u2026. The code should be somewhere\u2026. On the
+      walls?"
   animator: {fileID: 5738671628984816070}
 --- !u!114 &2771589063754709621
 MonoBehaviour:
@@ -177,6 +459,54 @@ PrefabInstance:
     m_TransformParent: {fileID: 6563618693745998148}
     m_Modifications:
     - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.4716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.4716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.4716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.2735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.2735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.2735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570326960901597037, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
@@ -267,6 +597,54 @@ PrefabInstance:
     - target: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630155484698783193, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c2fc79da89b0af428102fc39a0329f4, type: 3}
+    - target: {fileID: 4630155484698783193, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630155484698783193, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630155484698783193, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630155484955607357, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630155484955607357, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630155484955607357, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630155484955607357, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630155485548634674, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630155485548634674, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630155485548634674, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630155485548634674, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}

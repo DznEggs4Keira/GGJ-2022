@@ -201,7 +201,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 70aaafa46a46b2c45bb39da5fae305dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -219,12 +219,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62099910}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.16, y: -10.71, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.38, y: 1.0600004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 949400060}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &147686502
 GameObject:
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000f5e75730
+  m_ApplyToSortingLayers: 000000000000000000000000000000000000000000000000133adf2fa908ca75
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -331,6 +331,11 @@ Transform:
   m_Father: {fileID: 348552426}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &168774481 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 168774481, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+  m_PrefabInstance: {fileID: 478641168}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &265340572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -525,56 +530,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &353273377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 353273378}
-  - component: {fileID: 353273379}
-  m_Layer: 8
-  m_Name: HintDialogue4 FOR THIRD ITEM
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &353273378
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 353273377}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 864709771940481050}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &353273379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 353273377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 6275406102075388256}
-  dialogueText: {fileID: 6275406102075388255}
-  m_dialogue:
-    m_Name: Hint dialogue JAR OF EYEBALLS
-    m_sentences:
-    - This item is foul and slimy.  Hidden away in the depths.
-  animator: {fileID: 6275406102075388257}
 --- !u!1 &370287968
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,7 +608,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b41542e3a78e71a4786cab84b857086c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -671,12 +626,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370287968}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.87, y: 28.94, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.52, y: 4.800001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 745137908}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &404217761
 GameObject:
@@ -727,7 +682,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000f5e75730
+  m_ApplyToSortingLayers: 000000000000000000000000000000000000000000000000133adf2fa908ca75
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -786,12 +741,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 73540791490358609, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 73540791490358609, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 73540791490358609, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0495
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 73540791490358609, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.022
+      value: 9.67
       objectReference: {fileID: 0}
     - target: {fileID: 293472602562747515, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -811,11 +774,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 835437435364892684, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.91
+      value: 23.22
       objectReference: {fileID: 0}
     - target: {fileID: 835437435364892684, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.32
+      value: -5.392
       objectReference: {fileID: 0}
     - target: {fileID: 835437435364892684, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -881,6 +844,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.96
       objectReference: {fileID: 0}
+    - target: {fileID: 3869962861864092690, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 168774481}
     - target: {fileID: 5272559835482373119, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -905,13 +872,29 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.8409374
       objectReference: {fileID: 0}
+    - target: {fileID: 5890714941125912280, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_fontSize
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890714941125912280, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
+    - target: {fileID: 5890714941125912280, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890714941125912280, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7874186818498648958, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
     - target: {fileID: 6165224134142055737, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6165224134142055737, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6216295175319315550, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -930,9 +913,17 @@ PrefabInstance:
       value: 5.78
       objectReference: {fileID: 0}
     - target: {fileID: 7422166431788516864, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_Size.x
+      value: 6.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422166431788516864, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_Size.y
+      value: 17.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422166431788516864, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 708d6423d5da42042b886f2473cb4452, type: 3}
     - target: {fileID: 7422166431788516864, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -951,11 +942,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7422166431788516864, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8572619583001715516, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143380566149465399, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5188679
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143380566149465399, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_Color.g
+      value: 0.20803666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143380566149465399, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
+      propertyPath: m_Color.r
+      value: 0.39481625
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1807343354, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
@@ -1137,7 +1140,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 925006d19bb309b45a7269611f769318, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1155,12 +1158,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570835382}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.89, y: 13.17, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.323, y: 2.7330003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1558144938}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &574851935
 PrefabInstance:
@@ -1281,7 +1284,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000f5e75730
+  m_ApplyToSortingLayers: 000000000000000000000000000000000000000000000000133adf2fa908ca75
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -1462,7 +1465,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000f5e75730
+  m_ApplyToSortingLayers: 000000000000000000000000000000000000000000000000133adf2fa908ca75
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -1534,7 +1537,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000f5e75730
+  m_ApplyToSortingLayers: 000000000000000000000000000000000000000000000000133adf2fa908ca75
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -1647,60 +1650,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1845444407}
+  - {fileID: 370287971}
   m_Father: {fileID: 348552426}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &872609032
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 872609033}
-  - component: {fileID: 872609034}
-  m_Layer: 8
-  m_Name: HintDialogue1 FOR FLASHLIGHT
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &872609033
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872609032}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 864709771940481050}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &872609034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872609032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 6275406102075388256}
-  dialogueText: {fileID: 6275406102075388255}
-  m_dialogue:
-    m_Name: Hint dialogue 1 CODE FOR SAFE
-    m_sentences:
-    - "It should be\u2026. On the walls\u2026 I believe I hung something in front
-      of it\u2026"
-  animator: {fileID: 6275406102075388257}
 --- !u!1001 &887124191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1805,7 +1758,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.4
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000
+  m_ApplyToSortingLayers: 133adf2fef97463da908ca7500000000
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -1876,6 +1829,7 @@ Transform:
   - {fileID: 1364336180}
   - {fileID: 1957514598}
   - {fileID: 326858377}
+  - {fileID: 62099913}
   m_Father: {fileID: 348552426}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2000,7 +1954,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 803158547
-  m_SortingLayer: -3
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d90a5022c1c4cbf4e9600b50e7fc536c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2076,7 +2030,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000f5e75730
+  m_ApplyToSortingLayers: 000000000000000000000000000000000000000000000000133adf2fa908ca75
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -2179,7 +2133,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1154225091 stripped
 Transform:
@@ -2295,58 +2249,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1248576260
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1248576261}
-  - component: {fileID: 1248576262}
-  m_Layer: 8
-  m_Name: HintDialogue2 FOR FIRST ITEM
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1248576261
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248576260}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 864709771940481050}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1248576262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1248576260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 6275406102075388256}
-  dialogueText: {fileID: 6275406102075388255}
-  m_dialogue:
-    m_Name: Hint dialogue FLOWERS
-    m_sentences:
-    - 'Dear, I believe the first item consist of three parts and is a representative
-      of nature itself. '
-    - Like the sun, you should try looking for it in high places.
-  animator: {fileID: 6275406102075388257}
 --- !u!1 &1319164713
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,7 +2298,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000f5e75730
+  m_ApplyToSortingLayers: 000000000000000000000000000000000000000000000000133adf2fa908ca75
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -2591,6 +2493,7 @@ Transform:
   - {fileID: 1753909075}
   - {fileID: 956164718}
   - {fileID: 1645557993}
+  - {fileID: 570835385}
   m_Father: {fileID: 1698634458}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2674,7 +2577,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0891e217ab44fe747a78711858149be3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2697,7 +2600,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1580189378
 GameObject:
@@ -2787,7 +2690,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000f5e75730
+  m_ApplyToSortingLayers: 000000000000000000000000000000000000000000000000133adf2fa908ca75
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -2859,7 +2762,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000f5e75730
+  m_ApplyToSortingLayers: 000000000000000000000000000000000000000000000000133adf2fa908ca75
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -3063,7 +2966,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 803158547
-  m_SortingLayer: -3
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
@@ -3390,63 +3293,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4058138490613325400, guid: 53393e2e32197044ab02e9c968902dff, type: 3}
   m_PrefabInstance: {fileID: 1845444406}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1912380122
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1912380123}
-  - component: {fileID: 1912380124}
-  m_Layer: 8
-  m_Name: ULTRA VIOLET
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1912380123
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912380122}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 864709771940481050}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1912380124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912380122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 6275406102075388256}
-  dialogueText: {fileID: 6275406102075388255}
-  m_dialogue:
-    m_Name: 
-    m_sentences:
-    - "Finally! After all these years in this shrivelled raisin of a meatsack\u2026
-      it has been completed!"
-    - ...
-    - "You see\u2026 years ago, I girlbossed too close to the sun and I was punished
-      with this old, wrinkly, broken body. "
-    - But now, my curse is finally lifted, and I can RAVE again!
-    - ...
-    - "Enjoy your knitting, Willow, I\u2019m OUT!"
-  animator: {fileID: 6275406102075388257}
 --- !u!1 &1932593916
 GameObject:
   m_ObjectHideFlags: 0
@@ -3671,7 +3517,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000f5e75730
+  m_ApplyToSortingLayers: 000000000000000000000000000000000000000000000000133adf2fa908ca75
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -3724,57 +3570,6 @@ Transform:
   m_Father: {fileID: 1580189379}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1994728192
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1994728193}
-  - component: {fileID: 1994728194}
-  m_Layer: 8
-  m_Name: HintDialogue3 FOR SECOND ITEM
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1994728193
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1994728192}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 864709771940481050}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1994728194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1994728192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 6275406102075388256}
-  dialogueText: {fileID: 6275406102075388255}
-  m_dialogue:
-    m_Name: Hint dialogue WHIP
-    m_sentences:
-    - "This item would probably\u2026. be hidden away. Easily accessible in a comfortable
-      space\u2026but kept away from prying eyes"
-  animator: {fileID: 6275406102075388257}
 --- !u!114 &2007597253 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3734077073143492605, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
@@ -3896,7 +3691,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 133adf2fef97463d35399da4a908ca7500000000f5e75730
+  m_ApplyToSortingLayers: 000000000000000000000000000000000000000000000000133adf2fa908ca75
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -4083,7 +3878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &864709771940481050 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6563618693745998148, guid: 8c595815095300043a1a28006270f3cd, type: 3}
@@ -4629,74 +4424,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1658300398}
     m_Modifications:
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.size
-      value: 14
+    - target: {fileID: 1681854183426430496, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 168774481}
+    - target: {fileID: 1681854184500839950, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_fontSize
+      value: 0.3
       objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[0]
-      value: "There you are sweetheart, come, come, I\u2019ve made brownies for today\u2019s
-        special occasion!"
+    - target: {fileID: 1681854184500839950, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
+    - target: {fileID: 1681854184500839950, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[1]
-      value: "We can\u2019t have you go hungry now"
+    - target: {fileID: 1681854184500839950, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.3
       objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[2]
-      value: "I am very proud of you sweetheart\u2026. "
+    - target: {fileID: 1681854184500839950, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7874186818498648958, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
+    - target: {fileID: 1681854184821204225, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_fontSize
+      value: 0.2
       objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[3]
-      value: Not that long ago you were just a little pumpkin stumbling about in
-        the herb garden and now look at you
+    - target: {fileID: 1681854184821204225, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
+    - target: {fileID: 1681854184821204225, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.2
       objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[4]
-      value: "Are you excited to finally become the witch you\u2019ve always wanted
-        to be?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[5]
-      value: "Now, love, before we can start your Ritual Assessment tonight. There
-        are a couple of things we still need\u2026. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[6]
-      value: "Hmm\u2026 they should be around the house\u2026 somewhere..."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[7]
-      value: 'Oh! I know something that might be able to help us find them. Willow,
-        please unlock the safety deposit box in the living room. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[8]
-      value: Then come back, so I can explain how this particular item will help
-        you.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[9]
-      value: ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[10]
-      value: "Hmm. The code to unlock the safe\u2026what was it..."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[11]
-      value: "Ah yes\u2026. It\u2019s \u2026. It\u2019s\u2026. hold on, one moment
-        dear, the old noggin\u2019 isn\u2019t that sharp anymore\u2026hmm..."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[12]
-      value: "I wrote it down\u2026somewhere."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
-      propertyPath: m_dialogue.m_sentences.Array.data[13]
-      value: "If I remember correctly\u2026. The code should be somewhere\u2026.
-        On the walls?"
-      objectReference: {fileID: 0}
+    - target: {fileID: 1681854184821204225, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7874186818498648958, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
+    - target: {fileID: 2188845024565075002, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
+    - target: {fileID: 2188845024565075002, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7874186818498648958, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
     - target: {fileID: 2771589063754709620, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_Name
       value: Grandma Violet
