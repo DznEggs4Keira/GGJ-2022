@@ -6,6 +6,7 @@ public class Item : Interactable {
 
     [SerializeField] Transform player;
     public int itemId;
+    public bool recieved = false;
 
     public override string GetDescription() {
         return "Press E to pickup ";

@@ -518,6 +518,7 @@ MonoBehaviour:
   interactionType: 1
   player: {fileID: 478641169}
   itemId: 8
+  recieved: 0
 --- !u!58 &62099915
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1331,6 +1332,7 @@ MonoBehaviour:
   interactionType: 1
   player: {fileID: 478641169}
   itemId: 4
+  recieved: 0
 --- !u!58 &370287973
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1714,11 +1716,11 @@ PrefabInstance:
       objectReference: {fileID: 7874186818498648958, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
     - target: {fileID: 6165224134142055737, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.25
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6165224134142055737, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6216295175319315550, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2070,6 +2072,7 @@ MonoBehaviour:
   interactionType: 1
   player: {fileID: 478641169}
   itemId: 6
+  recieved: 0
 --- !u!58 &570835387
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3217,7 +3220,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.4
+  m_Intensity: 0.7
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 133adf2f00000000c7d90732a908ca75
   m_LightCookieSprite: {fileID: 0}
@@ -5457,6 +5460,7 @@ MonoBehaviour:
   interactionType: 1
   player: {fileID: 478641169}
   itemId: 2
+  recieved: 0
 --- !u!1 &1580189378
 GameObject:
   m_ObjectHideFlags: 0

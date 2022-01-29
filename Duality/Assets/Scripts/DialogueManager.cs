@@ -11,17 +11,20 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
 
+    private bool itemRecieved = false;
     private Queue<string> sentences;
 
     private void Start() {
         sentences = new Queue<string>();
     }
 
-    public void StartDialogue(Dialogue dialogue) {
+    public void StartDialogue(Dialogue dialogue, bool item = false) {
 
         animator.SetBool("isOpen", true);
 
         nameText.text = dialogue.m_Name;
+
+        itemRecieved = item;
 
         sentences.Clear();
 
@@ -57,6 +60,9 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("isOpen", false);
 
         Debug.Log("End of conversation");
-        Grandma.checkpoint++;
+
+        if (itemRecieved) {
+            Grandma.checkpoint++;
+        }
     }
 }
