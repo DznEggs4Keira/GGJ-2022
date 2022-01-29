@@ -6,7 +6,6 @@ public class Door : Interactable
 {
     [SerializeField] SpriteRenderer OverlaySR;
     [SerializeField] Collider2D OverlayTrigger;
-    [SerializeField] Sprite doorClosed;
     [SerializeField] Sprite doorOpened;
 
     public float fadeSpeed = 1f;

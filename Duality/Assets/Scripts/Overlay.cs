@@ -6,6 +6,7 @@ public class Overlay : MonoBehaviour
 {
     [SerializeField] SpriteRenderer OverlaySR;
     [SerializeField] GameObject OverlayLight;
+    [SerializeField] GameObject RoomToUnlock;
 
     public float fadeSpeed = 1f;
     public float fadeTime = 1f;
@@ -30,11 +31,13 @@ public class Overlay : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) {
         fadeIn = true;
-        OverlayLight.SetActive(false);
+        if(OverlayLight != null) OverlayLight.SetActive(false);
+        RoomToUnlock.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
         fadeIn = false;
-        OverlayLight.SetActive(true);
+        if (OverlayLight != null) OverlayLight.SetActive(true);
+        RoomToUnlock.SetActive(false);
     }
 }
