@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6563618693745998148}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &353273379
 MonoBehaviour:
@@ -49,57 +49,6 @@ MonoBehaviour:
     m_Name: Hint dialogue JAR OF EYEBALLS
     m_sentences:
     - This item is foul and slimy.  Hidden away in the depths.
-  animator: {fileID: 5738671628984816070}
---- !u!1 &872609032
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 872609033}
-  - component: {fileID: 872609034}
-  m_Layer: 8
-  m_Name: HintDialogue1 FOR FLASHLIGHT
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &872609033
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872609032}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6563618693745998148}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &872609034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872609032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59accda0e15e683419dc880dccc5e117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 1681854184500839950}
-  dialogueText: {fileID: 1681854184821204225}
-  m_dialogue:
-    m_Name: Hint dialogue 1 CODE FOR SAFE
-    m_sentences:
-    - "It should be\u2026. On the walls\u2026 I believe I hung something in front
-      of it\u2026"
   animator: {fileID: 5738671628984816070}
 --- !u!1 &1248576260
 GameObject:
@@ -130,7 +79,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6563618693745998148}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1248576262
 MonoBehaviour:
@@ -182,7 +131,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6563618693745998148}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1912380124
 MonoBehaviour:
@@ -239,7 +188,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6563618693745998148}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1994728194
 MonoBehaviour:
@@ -293,7 +242,6 @@ Transform:
   m_Children:
   - {fileID: 1681854183426430525}
   - {fileID: 691943293638731628}
-  - {fileID: 872609033}
   - {fileID: 1248576261}
   - {fileID: 1994728193}
   - {fileID: 353273378}
@@ -375,7 +323,7 @@ MonoBehaviour:
   interactionType: 0
   GrandmaDialogues:
   - {fileID: 2771589063754709618}
-  - {fileID: 872609034}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 1248576262}
   - {fileID: 0}
@@ -384,6 +332,7 @@ MonoBehaviour:
   - {fileID: 353273379}
   - {fileID: 0}
   - {fileID: 1912380124}
+  Player: {fileID: 0}
 --- !u!1 &4349750598093201138
 GameObject:
   m_ObjectHideFlags: 0
