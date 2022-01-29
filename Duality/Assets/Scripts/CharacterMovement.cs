@@ -174,10 +174,10 @@ public class CharacterMovement : MonoBehaviour {
 		Vector3 localScale = Vector3.one;
 		if (_horizontal < 0) {
 			//flip player arm based on movement
-			localScale.x = -0.04f;
+			localScale.x = -1f;
 			localScale.y = playerArm.localScale.y;
 		} else if (_horizontal > 0) {
-			localScale.x = +0.04f;
+			localScale.x = +1f;
 			localScale.y = playerArm.localScale.y;
 		} else {
 			localScale.x = playerArm.localScale.x;
@@ -188,7 +188,7 @@ public class CharacterMovement : MonoBehaviour {
 
 		Vector3 mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-		Vector3 aimDirection = (mouse_position - transform.position).normalized;
+		Vector3 aimDirection = (mouse_position - playerArm.position).normalized;
 		float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
 		playerArm.eulerAngles = new Vector3(0, 0, angle);
 
