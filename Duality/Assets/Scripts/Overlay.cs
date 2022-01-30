@@ -13,7 +13,7 @@ public class Overlay : MonoBehaviour
     public bool fadeIn = false;
 
     private void Start() {
-        OverlaySR = GetComponent<SpriteRenderer>();    
+        OverlaySR = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class Overlay : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) {
         fadeIn = true;
-        if(ToDisable != null) ToDisable.SetActive(false);
+        if (ToDisable != null) ToDisable.SetActive(false);
         if (RoomToUnlock != null) RoomToUnlock.SetActive(true);
     }
 

@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6563618693745998148}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &353273379
 MonoBehaviour:
@@ -50,6 +50,53 @@ MonoBehaviour:
     m_sentences:
     - This item is foul and slimy.  Hidden away in the depths.
   animator: {fileID: 5738671628984816070}
+--- !u!1 &888986793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 888986794}
+  - component: {fileID: 888986795}
+  m_Layer: 8
+  m_Name: SwitchingSpriteTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &888986794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888986793}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 691943293638731628}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &888986795
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888986793}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 4.0185356
 --- !u!1 &1248576260
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,7 +126,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6563618693745998148}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1248576262
 MonoBehaviour:
@@ -131,7 +178,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6563618693745998148}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1912380124
 MonoBehaviour:
@@ -148,7 +195,7 @@ MonoBehaviour:
   nameText: {fileID: 1681854184500839950}
   dialogueText: {fileID: 1681854184821204225}
   m_dialogue:
-    m_Name: 
+    m_Name: ULTRA VIOLET
     m_sentences:
     - "Finally! After all these years in this shrivelled raisin of a meatsack\u2026
       it has been completed!"
@@ -188,7 +235,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6563618693745998148}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1994728194
 MonoBehaviour:
@@ -222,6 +269,7 @@ GameObject:
   - component: {fileID: 4135483656487273695}
   - component: {fileID: 2771589063754709618}
   - component: {fileID: 2771589063754709621}
+  - component: {fileID: 143505642196578961}
   m_Layer: 8
   m_Name: Grandma Violet
   m_TagString: Untagged
@@ -240,6 +288,7 @@ Transform:
   m_LocalPosition: {x: 7.36, y: -3.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 8816151120627376095}
   - {fileID: 1681854183426430525}
   - {fileID: 691943293638731628}
   - {fileID: 1248576261}
@@ -297,9 +346,9 @@ MonoBehaviour:
     - "Now, love, before we can start your Ritual Assessment tonight. There are a
       couple of things we still need\u2026. "
     - "Hmm\u2026 they should be around the house\u2026 somewhere..."
-    - 'Oh! I know something that might be able to help us find them. Willow, please
-      unlock the safety deposit box in the living room. '
-    - Then come back, so I can explain how this particular item will help you.
+    - 'Oh! I know something that might be able to help us find them. '
+    - 'Willow, please unlock the safety deposit box in the living room. '
+    - Then come back, so I can explain how this particular item will help you
     - ...
     - "Hmm. The code to unlock the safe\u2026what was it..."
     - "Ah yes\u2026. It\u2019s \u2026. It\u2019s\u2026. hold on, one moment dear,
@@ -307,6 +356,8 @@ MonoBehaviour:
     - "I wrote it down\u2026somewhere."
     - "If I remember correctly\u2026. The code should be somewhere\u2026. On the
       walls?"
+    - "It should be\u2026. On the walls\u2026 I believe I hung something in front
+      of it\u2026"
   animator: {fileID: 5738671628984816070}
 --- !u!114 &2771589063754709621
 MonoBehaviour:
@@ -324,7 +375,6 @@ MonoBehaviour:
   GrandmaDialogues:
   - {fileID: 2771589063754709618}
   - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1248576262}
   - {fileID: 0}
   - {fileID: 1994728194}
@@ -333,6 +383,20 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 1912380124}
   Player: {fileID: 0}
+--- !u!114 &143505642196578961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2771589063754709620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c6c479f169ecc4d95c983b371130da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grandmaKnitting: {fileID: 21300000, guid: f10975d21e50ace4bb6b0675ef34f72b, type: 3}
+  grandmaPondering: {fileID: 21300000, guid: 9200aa1934d2fcd47a232783f2db900d, type: 3}
 --- !u!1 &4349750598093201138
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,8 +425,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2590974909462273661}
+  - {fileID: 888986794}
   m_Father: {fileID: 6563618693745998148}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5741704263013676067
 GameObject:
@@ -411,6 +476,88 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.73, y: 3.67}
   m_Direction: 0
+--- !u!1 &9074178790219831810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8816151120627376095}
+  - component: {fileID: 6492240841903542205}
+  m_Layer: 8
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8816151120627376095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9074178790219831810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6563618693745998148}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &6492240841903542205
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9074178790219831810}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 9200aa1934d2fcd47a232783f2db900d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.25, y: 3.98}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &6275406100839703612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -484,7 +631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_AnchorMax.x
@@ -540,7 +687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.07
+      value: 1.38
       objectReference: {fileID: 0}
     - target: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -575,6 +722,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4630155484955607357, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
+    - target: {fileID: 4630155484955607357, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -587,9 +738,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4630155484955607357, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7874186818498648958, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
+    - target: {fileID: 4630155484955607357, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 4630155485548634674, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
     - target: {fileID: 4630155485548634674, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_fontColor.b
       value: 0
@@ -603,21 +762,23 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4630155485548634674, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7874186818498648958, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
+    - target: {fileID: 4630155485548634674, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 5293680552267462662, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
+    - target: {fileID: 5293680552267462662, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7874186818498648958, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
---- !u!224 &1681854183426430525 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
-  m_PrefabInstance: {fileID: 6275406100839703612}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &5738671628984816070 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1780439078959724026, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
-  m_PrefabInstance: {fileID: 6275406100839703612}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1681854184500839950 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4630155485548634674, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
@@ -629,6 +790,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &5738671628984816070 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1780439078959724026, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+  m_PrefabInstance: {fileID: 6275406100839703612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1681854183426430525 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+  m_PrefabInstance: {fileID: 6275406100839703612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1681854184821204225 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4630155484955607357, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
