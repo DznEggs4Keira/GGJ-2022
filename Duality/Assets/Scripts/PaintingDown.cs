@@ -2,18 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Overlay : MonoBehaviour
+public class PaintingDown : MonoBehaviour
 {
     [SerializeField] SpriteRenderer OverlaySR;
-    [SerializeField] GameObject ToDisable;
-    [SerializeField] GameObject RoomToUnlock;
 
     public float fadeSpeed = 1f;
     public float fadeTime = 1f;
     public bool fadeIn = false;
 
     private void Start() {
-        OverlaySR = GetComponent<SpriteRenderer>();    
+        OverlaySR = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -30,14 +28,10 @@ public class Overlay : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        fadeIn = true;
-        if(ToDisable != null) ToDisable.SetActive(false);
-        if (RoomToUnlock != null) RoomToUnlock.SetActive(true);
+        fadeIn = false;
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-        fadeIn = false;
-        if (ToDisable != null) ToDisable.SetActive(true);
-        if (RoomToUnlock != null) RoomToUnlock.SetActive(false);
+        fadeIn = true;
     }
 }

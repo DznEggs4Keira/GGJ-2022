@@ -44,9 +44,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UV
-    uniqueID: 2761767221
-    locked: 0
   - name: Player
     uniqueID: 839375303
     locked: 0

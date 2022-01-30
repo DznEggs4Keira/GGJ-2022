@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.Universal;
 
 public class Player : MonoBehaviour
 {
@@ -9,7 +8,6 @@ public class Player : MonoBehaviour
 
     // Torchlight
     [SerializeField] Transform playerArm;
-    [SerializeField] Transform Torchlight;
 
     bool torch = false;
 
@@ -35,7 +33,6 @@ public class Player : MonoBehaviour
         }
 
         if(torch) {
-            GetComponentInChildren<Light2D>().enabled = torch;
             controller.LookAtMouse(playerArm);
         }
     }

@@ -9,7 +9,7 @@ public class Ladder : Interactable
     [SerializeField] Player Player;
 
     public override string GetDescription() {
-        return "Hold E to use ladder";
+        return "Hold E to use Stairs";
     }
 
     public override void Interact() {
