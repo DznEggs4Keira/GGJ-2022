@@ -14,11 +14,14 @@ public class Outro : MonoBehaviour
 
     public AudioClip newClip;
 
+    public ParticleSystem particles;
+
     // Update is called once per frame
     void Update()
     {
-        if(Grandma.checkpoint == 8) {
+        if(Grandma.checkpoint == 7) {
             InitiateOutro();
+            UVModel.GetComponentInParent<Grandma>().TriggerDialogueManual();
         }
     }
 
@@ -28,6 +31,7 @@ public class Outro : MonoBehaviour
         AudioManager.instance.SwapTrack(newClip);
 
         // start particles
+        particles.Play();
 
         // turn granny to uv
         GrandmaSR.sprite = UltraViolet;
@@ -39,10 +43,7 @@ public class Outro : MonoBehaviour
         WillowSR.transform.gameObject.GetComponentInChildren<Animator>().enabled = false;
         WillowSR.sprite = GrannyWillow;
 
-        Vector3 newScaleForWillow = new Vector3(0.4f, 0.4f, 1f);
+        Vector3 newScaleForWillow = new Vector3(0.25f, 0.25f, 1f);
         WillowModel.localScale = newScaleForWillow;
-
-        WillowSR.transform.gameObject.GetComponentInParent<CharacterMovement>().enabled = false;
-
     }
 }

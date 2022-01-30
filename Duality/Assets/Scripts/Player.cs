@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
             playerArm.gameObject.SetActive(torch);
         }
 
-        if(torch) {
+        if (torch) {
             controller.LookAtMouse(playerArm);
         }
     }
