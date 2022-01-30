@@ -72,8 +72,12 @@ public class ChracterInteraction : MonoBehaviour
                 break;
 
             case Interactable.Interactions.Minigame:
-                // Show Safe Code UI
-                isInteracting = false;
+                // Safe Code UI
+                //if you tap the interaction button
+                if (Input.GetButtonDown("Interact")) {
+                    interactable.Interact();
+                    isInteracting = false;
+                }
                 break;
 
             default:
