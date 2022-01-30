@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/00 - Grandma House.unity
+    guid: 235aa96c821611543940ebbf6141b5a8
   m_configObjects: {}
