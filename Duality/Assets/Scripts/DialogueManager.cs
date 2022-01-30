@@ -59,10 +59,12 @@ public class DialogueManager : MonoBehaviour
     private void EndDialogue() {
         animator.SetBool("isOpen", false);
 
-        Debug.Log("End of conversation");
+        Debug.Log($"End of conversation Element {Grandma.checkpoint}");
 
         if (itemRecieved) {
             Grandma.checkpoint++;
+            // set item recieved back to false until we get the next item
+            itemRecieved = false;
         }
     }
 }

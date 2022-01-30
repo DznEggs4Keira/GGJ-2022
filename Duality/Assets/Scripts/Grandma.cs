@@ -19,8 +19,7 @@ public class Grandma : Interactable
         var item = Player.GetComponentInChildren<Item>();
         if (item != null) {
             //take it
-            item.recieved = true;
-            itemRecieved = item.recieved;
+            itemRecieved = true;
             checkpoint = item.itemId;
             Destroy(item.gameObject);
         }
