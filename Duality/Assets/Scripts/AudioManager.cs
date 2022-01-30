@@ -17,12 +17,17 @@ public class AudioManager : MonoBehaviour
             instance = this;
         }
     }
-
     #endregion
 
     private void Start() {
         track01 = gameObject.AddComponent<AudioSource>();
         track02 = gameObject.AddComponent<AudioSource>();
+
+        track01.loop = true;
+        track01.volume = 0.3f;
+
+        track02.loop = true;
+        track02.volume = 0f;
 
         isPlayingTrack01 = true;
 
@@ -31,8 +36,9 @@ public class AudioManager : MonoBehaviour
 
     public void SwapTrack(AudioClip newClip) {
         StopAllCoroutines();
-
         StartCoroutine(FadeTrack(newClip));
+
+        isPlayingTrack01 = !isPlayingTrack01;
     }
 
     IEnumerator FadeTrack(AudioClip newClip) {
@@ -45,7 +51,7 @@ public class AudioManager : MonoBehaviour
 
             while (timeElapsed < timeToFade) {
                 track02.volume = Mathf.Lerp(0, 1, timeElapsed / timeToFade);
-                track01.volume = Mathf.Lerp(1, 0, timeElapsed / timeToFade);
+                track01.volume = Mathf.Lerp(0.3f, 0, timeElapsed / timeToFade);
                 timeElapsed += Time.deltaTime;
                 yield return null;
             }
