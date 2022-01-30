@@ -27,7 +27,6 @@ public class AudioManager : MonoBehaviour
         track01.volume = 0.3f;
 
         track02.loop = true;
-        track02.volume = 0f;
 
         isPlayingTrack01 = true;
 
@@ -35,8 +34,19 @@ public class AudioManager : MonoBehaviour
     }
 
     public void SwapTrack(AudioClip newClip) {
-        StopAllCoroutines();
-        StartCoroutine(FadeTrack(newClip));
+        //StopAllCoroutines();
+        //StartCoroutine(FadeTrack(newClip));
+
+        if (isPlayingTrack01) {
+            track02.clip = newClip;
+            track02.Play();
+            track01.Stop();
+        } else {
+
+            track01.clip = newClip;
+            track01.Play();
+            track02.Stop();
+        }
 
         isPlayingTrack01 = !isPlayingTrack01;
     }
@@ -57,6 +67,19 @@ public class AudioManager : MonoBehaviour
             }
 
             track01.Stop();
+        } else {
+
+            track01.clip = newClip;
+            track01.Play();
+
+            while (timeElapsed < timeToFade) {
+                track01.volume = Mathf.Lerp(0, 0.3f, timeElapsed / timeToFade);
+                track02.volume = Mathf.Lerp(1f, 0, timeElapsed / timeToFade);
+                timeElapsed += Time.deltaTime;
+                yield return null;
+            }
+
+            track02.Stop();
         }
     }
 }
