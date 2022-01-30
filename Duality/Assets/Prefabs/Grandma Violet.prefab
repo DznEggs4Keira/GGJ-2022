@@ -46,7 +46,7 @@ MonoBehaviour:
   nameText: {fileID: 1681854184500839950}
   dialogueText: {fileID: 1681854184821204225}
   m_dialogue:
-    m_Name: Hint dialogue JAR OF EYEBALLS
+    m_Name: Grandma Violet
     m_sentences:
     - This item is foul and slimy.  Hidden away in the depths.
   animator: {fileID: 5738671628984816070}
@@ -96,10 +96,9 @@ MonoBehaviour:
   nameText: {fileID: 1681854184500839950}
   dialogueText: {fileID: 1681854184821204225}
   m_dialogue:
-    m_Name: Hint dialogue FLOWERS
+    m_Name: Grandma Violet
     m_sentences:
-    - 'Dear, I believe the first item consist of three parts and is a representative
-      of nature itself. '
+    - 'Dear, I believe the first item is a representative of nature itself. '
     - Like the sun, you should try looking for it in high places.
   animator: {fileID: 5738671628984816070}
 --- !u!1 &1912380122
@@ -205,7 +204,7 @@ MonoBehaviour:
   nameText: {fileID: 1681854184500839950}
   dialogueText: {fileID: 1681854184821204225}
   m_dialogue:
-    m_Name: Hint dialogue WHIP
+    m_Name: Grandma Violet
     m_sentences:
     - "This item would probably\u2026. be hidden away. Easily accessible in a comfortable
       space\u2026but kept away from prying eyes"
@@ -223,6 +222,7 @@ GameObject:
   - component: {fileID: 2771589063754709618}
   - component: {fileID: 2771589063754709621}
   - component: {fileID: 143505642196578961}
+  - component: {fileID: 2059684761}
   m_Layer: 8
   m_Name: Grandma Violet
   m_TagString: Untagged
@@ -248,6 +248,7 @@ Transform:
   - {fileID: 1994728193}
   - {fileID: 353273378}
   - {fileID: 1912380123}
+  - {fileID: 3869138112116511281}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -299,18 +300,14 @@ MonoBehaviour:
     - "Now, love, before we can start your Ritual Assessment tonight. There are a
       couple of things we still need\u2026. "
     - "Hmm\u2026 they should be around the house\u2026 somewhere..."
-    - 'Oh! I know something that might be able to help us find them. '
-    - 'Willow, please unlock the safety deposit box in the living room. '
-    - Then come back, so I can explain how this particular item will help you
-    - ...
-    - "Hmm. The code to unlock the safe\u2026what was it..."
     - "Ah yes\u2026. It\u2019s \u2026. It\u2019s\u2026. hold on, one moment dear,
       the old noggin\u2019 isn\u2019t that sharp anymore\u2026hmm..."
-    - "I wrote it down\u2026somewhere."
-    - "If I remember correctly\u2026. The code should be somewhere\u2026. On the
-      walls?"
-    - "It should be\u2026. On the walls\u2026 I believe I hung something in front
-      of it\u2026"
+    - 'Oh! I know something that might be able to help us find them. '
+    - ....
+    - There it is, this light will show you the way. Use it well, and you will find
+      all that is needed for your Ritual Assessment today.
+    - The assessment will require three items. If you are nifty enough Pumpkin, you
+      will find them all.
   animator: {fileID: 5738671628984816070}
 --- !u!114 &2771589063754709621
 MonoBehaviour:
@@ -327,7 +324,6 @@ MonoBehaviour:
   interactionType: 0
   GrandmaDialogues:
   - {fileID: 2771589063754709618}
-  - {fileID: 0}
   - {fileID: 1248576262}
   - {fileID: 0}
   - {fileID: 1994728194}
@@ -348,9 +344,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c6c479f169ecc4d95c983b371130da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 6492240841903542205}
   grandmaKnitting: {fileID: 21300000, guid: f10975d21e50ace4bb6b0675ef34f72b, type: 3}
   grandmaPondering: {fileID: 21300000, guid: 9200aa1934d2fcd47a232783f2db900d, type: 3}
+--- !u!114 &2059684761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2771589063754709620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c1f6bcd314a464e8b7319bfc5dac4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GrandmaSR: {fileID: 6492240841903542205}
+  UVModel: {fileID: 8816151120627376095}
+  UltraViolet: {fileID: 21300000, guid: c004db157e208c840be4aa27b1fa80a3, type: 3}
+  WillowSR: {fileID: 0}
+  GrannyWillow: {fileID: 21300000, guid: 877cd9ab752d9b04e9d64cca64e6b68c, type: 3}
+  WillowModel: {fileID: 0}
+  newClip: {fileID: 8300000, guid: 0e0327eb91308b74484df0e22d4c2b60, type: 3}
+  particles: {fileID: 827849444410983974}
 --- !u!1 &4349750598093201138
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +443,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.73, y: 3.67}
+  m_Size: {x: 6.2, y: 4.15}
   m_Direction: 0
 --- !u!1 &9074178790219831810
 GameObject:
@@ -640,11 +656,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.38
+      value: 2.02
       objectReference: {fileID: 0}
     - target: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3.13
+      value: 2.76
       objectReference: {fileID: 0}
     - target: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -732,27 +748,6 @@ PrefabInstance:
       objectReference: {fileID: 7874186818498648958, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
---- !u!224 &1681854183426430525 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
-  m_PrefabInstance: {fileID: 6275406100839703612}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &5738671628984816070 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1780439078959724026, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
-  m_PrefabInstance: {fileID: 6275406100839703612}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1681854184500839950 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4630155485548634674, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
-  m_PrefabInstance: {fileID: 6275406100839703612}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1681854184821204225 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4630155484955607357, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
@@ -764,3 +759,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1681854184500839950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4630155485548634674, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+  m_PrefabInstance: {fileID: 6275406100839703612}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &5738671628984816070 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1780439078959724026, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+  m_PrefabInstance: {fileID: 6275406100839703612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1681854183426430525 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4630155484475535873, guid: 8880e47c1ae04fc47a86122a0c24ff62, type: 3}
+  m_PrefabInstance: {fileID: 6275406100839703612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6275406101572782161
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6563618693745998148}
+    m_Modifications:
+    - target: {fileID: 6640771623611991448, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_Name
+      value: Explosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659597030866783863, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+--- !u!4 &3869138112116511281 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7108729722438277728, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+  m_PrefabInstance: {fileID: 6275406101572782161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &827849444410983974 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6659597030866783863, guid: df82cd000d276a444b772e4751b4136c, type: 3}
+  m_PrefabInstance: {fileID: 6275406101572782161}
+  m_PrefabAsset: {fileID: 0}

@@ -26,4 +26,8 @@ public class Grandma : Interactable
 
         GrandmaDialogues[checkpoint].TriggerDialogue(itemRecieved);
     }
+
+    public void TriggerDialogueManual() {
+        GrandmaDialogues[checkpoint].TriggerDialogue(false);
+    }
 }
