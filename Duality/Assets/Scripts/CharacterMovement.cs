@@ -170,34 +170,13 @@ public class CharacterMovement : MonoBehaviour {
 
 	public void LookAtMouse(Transform playerArm) {
 
-		//update arm with player direction
-		Vector3 localScale = Vector3.one;
-		if (_horizontal < 0) {
-			//flip player arm based on movement
-			localScale.x = -1f;
-			localScale.y = playerArm.localScale.y;
-		} else if (_horizontal > 0) {
-			localScale.x = +1f;
-			localScale.y = playerArm.localScale.y;
-		} else {
-			localScale.x = playerArm.localScale.x;
-			localScale.y = playerArm.localScale.y;
-		}
-
-		playerArm.localScale = localScale;
-
 		Vector3 mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 		Vector3 aimDirection = (mouse_position - playerArm.position).normalized;
 		float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-		playerArm.eulerAngles = new Vector3(0, 0, angle);
+		Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+		playerArm.rotation = rotation;
 
-		if (angle > 90) {
-			playerArm.eulerAngles = new Vector3(0, 0, 90);
-
-		} else if (angle < -90) {
-			playerArm.eulerAngles = new Vector3(0, 0, -90);
-		}
 	}
 
 	#endregion
