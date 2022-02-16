@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Outro : MonoBehaviour
 {
+
     public SpriteRenderer GrandmaSR;
     public Transform UVModel;
     public Sprite UltraViolet;
@@ -16,16 +17,20 @@ public class Outro : MonoBehaviour
 
     public ParticleSystem particles;
 
+    private bool isOutroInit = false;
+
     // Update is called once per frame
     void Update()
     {
-        if(Grandma.checkpoint == 7) {
+        if(Grandma.checkpoint == 7 && !isOutroInit) {
             InitiateOutro();
             UVModel.GetComponentInParent<Grandma>().TriggerDialogueManual();
         }
     }
 
     private void InitiateOutro() {
+
+        isOutroInit = true;
 
         // fade music
         AudioManager.instance.SwapTrack(newClip);
@@ -45,5 +50,22 @@ public class Outro : MonoBehaviour
 
         Vector3 newScaleForWillow = new Vector3(0.25f, 0.25f, 1f);
         WillowModel.localScale = newScaleForWillow;
+
+        WillowModel.GetComponentInParent<Player>().disablePlayer = true;
+
+        StartCoroutine(FadeOutExit(30));
+    }
+
+    IEnumerator FadeOutExit(float delay) {
+        yield return new WaitForSeconds(delay);
+
+        //FadeManager.Fade();
+        Debug.Log("Fading Screen");
+
+        yield return new WaitForSeconds(3);
+
+        Debug.Log("Quit");
+        Application.Quit();
+
     }
 }

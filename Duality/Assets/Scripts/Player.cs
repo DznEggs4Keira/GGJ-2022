@@ -4,16 +4,30 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public bool disablePlayer = false;
+
     [SerializeField] public CharacterMovement controller;
+    [SerializeField] private ChracterInteraction interactor;
 
     // Torchlight
     [SerializeField] Transform playerArm;
 
     bool torch = false;
 
+    private void Start() {
+        controller = GetComponent<CharacterMovement>();
+        interactor = GetComponent<ChracterInteraction>();
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if(disablePlayer) {
+            controller.enabled = !disablePlayer;
+            interactor.enabled = !disablePlayer;
+            return;
+        }
+
         HandleTorch();
     }
 
