@@ -12,11 +12,13 @@ public class Item : Interactable {
     }
 
     public override void Interact() {
-        //parent to player
-        transform.SetParent(player.transform);
-        transform.localPosition = Vector3.up * 5f;
+        //check if at the right checkpoint to interact with item
+        if (Grandma.checkpoint == itemId - 1) {
+            // Allow interaction
 
-        //enable a public static bool or int?
-
+            //parent to player
+            transform.SetParent(player.transform);
+            transform.localPosition = Vector3.up * 5f;
+        }
     }
 }
