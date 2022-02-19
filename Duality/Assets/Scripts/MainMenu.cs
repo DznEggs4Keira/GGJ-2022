@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        Time.timeScale = 0f;
-    }
 
     public void PlayButton() {
-        Time.timeScale = 1f;
+        GameManager.instance.setTimescale(1f); ;
     }
 
     public void ExitButton() {

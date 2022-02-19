@@ -59,13 +59,6 @@ public class Outro : MonoBehaviour
     IEnumerator FadeOutExit(float delay) {
         yield return new WaitForSeconds(delay);
 
-        //FadeManager.Fade();
-        Debug.Log("Fading Screen");
-
-        yield return new WaitForSeconds(3);
-
-        Debug.Log("Quit");
-        Application.Quit();
-
+        GameManager.instance.fadeManager.Fade();
     }
 }
