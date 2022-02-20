@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenu : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
 
     public void PlayButton() {
@@ -11,5 +11,9 @@ public class MainMenu : MonoBehaviour
 
     public void ExitButton() {
         Application.Quit();
+    }
+
+    public void ShowTooltip(bool value) {
+
     }
 }

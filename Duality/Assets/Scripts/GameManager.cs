@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public FadeManager fadeManager;
+    public UIManager uiManager;
 
     public void ReloadScene() {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

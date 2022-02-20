@@ -818,7 +818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 196688033}
   - component: {fileID: 196688034}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light 2D (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1108,7 +1108,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1393102934355586051, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_SortingLayer
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1393102934355586051, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_SortingLayerID
@@ -1182,9 +1182,17 @@ PrefabInstance:
       propertyPath: interactionType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6243485849331230378, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6243485849331230378, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 7880797993000547286, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_Name
-      value: Ladder
+      value: Stairs
       objectReference: {fileID: 0}
     - target: {fileID: 8996917579637318433, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1444,7 +1452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 404217762}
   - component: {fileID: 404217763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light 2D (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1513,18 +1521,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1297661032, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 1297661032, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957095160, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 04f8d5ab9e75ca140bea51987058f8b1, type: 3}
     - target: {fileID: 835437435364892684, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1568,54 +1564,6 @@ PrefabInstance:
     - target: {fileID: 835437435364892684, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2005714821033340271, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 4cfd45ac642bf174392c5243c03dadc9, type: 3}
-    - target: {fileID: 3176468078600510046, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_Size.x
-      value: 4.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 3176468078600510046, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_Size.y
-      value: 3.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3176468078600510046, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3e1e7ffdfeba7184ebf033b3d369cd33, type: 3}
-    - target: {fileID: 3176468078600510046, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_Color.a
-      value: 0.5803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 3176468078600510046, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3176468078600510046, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3176468078600510046, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 839375303
-      objectReference: {fileID: 0}
-    - target: {fileID: 3176468078600510046, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5272559835482373119, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5628340271316110657, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_Size.y
-      value: 3.7250497
-      objectReference: {fileID: 0}
-    - target: {fileID: 5628340271316110657, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.1421372
       objectReference: {fileID: 0}
     - target: {fileID: 8572619583001715516, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_Name
@@ -1812,7 +1760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 514348195}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ToDisable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1845,7 +1793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 527678174}
   - component: {fileID: 527678175}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light 2D (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2386,7 +2334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 614669237}
   - component: {fileID: 614669238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light 2D (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2528,7 +2476,6 @@ GameObject:
   m_Component:
   - component: {fileID: 705913979}
   - component: {fileID: 705913978}
-  - component: {fileID: 705913980}
   m_Layer: 0
   m_Name: Main Menu
   m_TagString: Untagged
@@ -2559,18 +2506,6 @@ Transform:
   m_Father: {fileID: 754299932}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &705913980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705913977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c01cfa8dc853496478c4afcec64f94fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &745137907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,6 +2552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 754299932}
+  - component: {fileID: 754299933}
   m_Layer: 0
   m_Name: UI Manager
   m_TagString: Untagged
@@ -2640,6 +2576,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &754299933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754299931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c01cfa8dc853496478c4afcec64f94fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &768802486
 GameObject:
   m_ObjectHideFlags: 0
@@ -2675,7 +2623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.8706, y: -171}
+  m_AnchoredPosition: {x: -9.8706, y: -168}
   m_SizeDelta: {x: 216.8361, y: 70.6019}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!114 &768802488
@@ -2699,9 +2647,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9960785, g: 0.9333334, b: 0.75294125, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2794,7 +2742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 787589489}
   - component: {fileID: 787589490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light 2D (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2866,7 +2814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 797784945}
   - component: {fileID: 797784946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light 2D (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3166,7 +3114,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1580189379}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &867332303
 MonoBehaviour:
@@ -3367,7 +3315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7880797993000547286, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_Name
-      value: Ladder
+      value: Stairs
       objectReference: {fileID: 0}
     - target: {fileID: 8996917579637318433, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3821,7 +3769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020748256}
   - component: {fileID: 1020748257}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light 2D (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3967,7 +3915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1043751842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ToDisable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4377,6 +4325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeManager: {fileID: 1536071147}
+  uiManager: {fileID: 0}
 --- !u!4 &1199494182
 Transform:
   m_ObjectHideFlags: 0
@@ -4505,7 +4454,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.8707, y: -327}
+  m_AnchoredPosition: {x: -9.8706, y: -329}
   m_SizeDelta: {x: 216.8361, y: 70.6019}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!114 &1298990754
@@ -4529,9 +4478,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9960785, g: 0.9333334, b: 0.75294125, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -4552,8 +4501,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 705913980}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 754299933}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ExitButton
         m_Mode: 1
         m_Arguments:
@@ -4736,7 +4685,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.092167854, y: -2.8264863}
+  m_Offset: {x: 0.101786256, y: -1.3163862}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4747,7 +4696,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.215641, y: 4.7276855}
+  m_Size: {x: 4.1964045, y: 2.7847538}
   m_EdgeRadius: 0
 --- !u!1 &1428189914
 GameObject:
@@ -4905,7 +4854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1469505901}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ToDisable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4936,7 +4885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1484869398}
   - component: {fileID: 1484869399}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light 2D (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5409,8 +5358,8 @@ Transform:
   - {fileID: 1186975402}
   - {fileID: 3979020163162171311}
   - {fileID: 65237502}
-  - {fileID: 2137116814}
   - {fileID: 867332302}
+  - {fileID: 2137116814}
   - {fileID: 1658300398}
   - {fileID: 1608403635}
   - {fileID: 579917100}
@@ -5480,9 +5429,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9960785, g: 0.9333334, b: 0.75294125, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5503,8 +5452,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 705913980}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 754299933}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: PlayButton
         m_Mode: 1
         m_Arguments:
@@ -6438,7 +6387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1782165418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3PartLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6496,7 +6445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 30.456116, y: -22.375885}
+  m_AnchoredPosition: {x: 32, y: -16}
   m_SizeDelta: {x: -123.0677, y: -91.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1843624274
@@ -6527,7 +6476,9 @@ MonoBehaviour:
     A D to move
 
     E to
-    Interact'
+    Interact
+
+    Right Click to turn on torchlight'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
   m_sharedMaterial: {fileID: 7874186818498648958, guid: 223b6c335e7823f4ea7f1fda84deee80, type: 2}
@@ -6899,7 +6850,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.5
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -7195,7 +7146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1973052180}
   - component: {fileID: 1973052181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light 2D (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7332,7 +7283,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.5
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -7568,7 +7519,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.36029184}
+  m_Offset: {x: 0, y: -0.36029178}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7579,7 +7530,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.27941632}
+  m_Size: {x: 1, y: 0.27941623}
   m_EdgeRadius: 0
 --- !u!114 &249360731296714291
 MonoBehaviour:
@@ -7609,7 +7560,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1547164614617711683, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1547164614617711683, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7651,37 +7602,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1802030033338242318, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.009
-      objectReference: {fileID: 0}
-    - target: {fileID: 1802030033338242318, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5046
-      objectReference: {fileID: 0}
-    - target: {fileID: 2412577456132035810, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
-      propertyPath: m_Size.x
-      value: 1.21
-      objectReference: {fileID: 0}
     - target: {fileID: 5908756819122094712, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 2007597253}
-    - target: {fileID: 5908756819122094712, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
-      propertyPath: interactionType
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7880797993000547286, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_Name
-      value: Ladder
-      objectReference: {fileID: 0}
-    - target: {fileID: 8996917579637318433, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.055
-      objectReference: {fileID: 0}
-    - target: {fileID: 8996917579637318433, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.4755
+      value: Stairs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
@@ -7708,7 +7635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3979020163162171311}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door_Cellar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7724,7 +7651,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3979020164198572096}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door_Bedroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7776,7 +7703,7 @@ GameObject:
   - component: {fileID: 5354873853631023110}
   - component: {fileID: 1847503151490106475}
   - component: {fileID: 1847503151490106476}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7853,7 +7780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2191097933755610806}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door_Attic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7901,7 +7828,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.36029184}
+  m_Offset: {x: 0.012842566, y: -0.36885357}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7912,7 +7839,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.27941632}
+  m_Size: {x: 1.0256851, y: 0.29653978}
   m_EdgeRadius: 0
 --- !u!61 &2897666830814519589
 BoxCollider2D:
@@ -7927,7 +7854,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.36029184}
+  m_Offset: {x: 0.025685132, y: -0.3816961}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7938,7 +7865,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.27941632}
+  m_Size: {x: 1.0513703, y: 0.32222486}
   m_EdgeRadius: 0
 --- !u!114 &3037095706170154794
 MonoBehaviour:
@@ -7990,7 +7917,7 @@ GameObject:
   - component: {fileID: 7133793420568436464}
   - component: {fileID: 3527339285077283486}
   - component: {fileID: 3527339285077283485}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8053,7 +7980,7 @@ GameObject:
   - component: {fileID: 7133793419465971999}
   - component: {fileID: 7056145507581298099}
   - component: {fileID: 3527339286179747188}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8397,7 +8324,7 @@ GameObject:
   - component: {fileID: 2571685762558934714}
   - component: {fileID: 2897666830814519589}
   - component: {fileID: 3037095706170154794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8415,7 +8342,7 @@ GameObject:
   - component: {fileID: 2571685761447950677}
   - component: {fileID: 2897666829778970314}
   - component: {fileID: 3037095707215075525}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8553,7 +8480,7 @@ GameObject:
   - component: {fileID: 783750188425326499}
   - component: {fileID: 100929218277027900}
   - component: {fileID: 249360731296714291}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
