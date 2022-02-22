@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Grandma : Interactable
 {
-    public static int checkpoint = 0;
-
     [SerializeField] DialogueTrigger[] GrandmaDialogues;
     [SerializeField] Player Player;
 
@@ -20,14 +18,14 @@ public class Grandma : Interactable
         if (item != null) {
             //take it
             itemRecieved = true;
-            checkpoint = item.itemId;
+            GameManager.checkpoint = item.itemId;
             Destroy(item.gameObject);
         }
 
-        GrandmaDialogues[checkpoint].TriggerDialogue(itemRecieved);
+        GrandmaDialogues[GameManager.checkpoint].TriggerDialogue(itemRecieved);
     }
 
     public void TriggerDialogueManual() {
-        GrandmaDialogues[checkpoint].TriggerDialogue(false);
+        GrandmaDialogues[GameManager.checkpoint].TriggerDialogue(false);
     }
 }

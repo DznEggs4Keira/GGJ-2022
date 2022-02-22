@@ -11,8 +11,6 @@ public class CharacterMovement : MonoBehaviour {
 	[SerializeField] Animator playerAnim;
 	[SerializeField] SpriteRenderer playerSR;
 	[SerializeField] Transform playerFeet;
-	[SerializeField] Transform playerHead;
-	[SerializeField] Collider2D m_CrouchDisableCollider;
 
 	//Serializable private fields
 	[Header("Movement")]
@@ -28,13 +26,13 @@ public class CharacterMovement : MonoBehaviour {
 	Vector2 _startPosition;
 	int _jumpsRemaining;
 	bool isGrounded = true;
-	bool isCrouching = false;
 	bool isWalking = false;
 	float _fallTimer;
 	float _jumpTimer;
 	float _horizontal;
+	float _vertical;
 
-	public Transform PlayerFeet { get { return playerFeet; } }
+	public bool ClimbingAllowed { get; set; }
 
 	//you can avoid an if entirely with
 	//bool walking = horizontal != 0; - horizontal != 0 would be true, so anything other than that would be false
@@ -52,14 +50,18 @@ public class CharacterMovement : MonoBehaviour {
 		UpdatAnimator();
 
 		CalculateIsGrounded();
-		CalculateIsCrouching();
+		CalculateClimbing();
 
 		// Get the Input Movement from the player
 		_horizontal = Input.GetAxis($"Horizontal") * _speed;
 		UpdateHorizontalMovement();
 
+		if(ClimbingAllowed) {
+			_vertical = Input.GetAxis($"Vertical") * _speed;
+			UpdateVerticalMovement();
+		}
+
 		PerformJumpingCalculations();
-		PerformCrouchingCalculations();
 	}
 
 	void PerformJumpingCalculations() {
@@ -101,39 +103,20 @@ public class CharacterMovement : MonoBehaviour {
 		}
 	}
 
-	void PerformCrouchingCalculations() {
-
-		if (Input.GetButton("Crouch") && isGrounded) {
-			isCrouching = true;
-			// Reduce the speed by the crouchSpeed multiplier
-			_speed *= _crouchSpeed;
-
-			// Disable one of the colliders when crouching
-			if (m_CrouchDisableCollider != null)
-				m_CrouchDisableCollider.enabled = false;
-		} else {
-
-			isCrouching = false;
-			// Reduce the speed by the crouchSpeed multiplier
-			_speed = 5f; ;
-
-			// Enable the collider when not crouching
-			if (m_CrouchDisableCollider != null)
-				m_CrouchDisableCollider.enabled = true;
-		}
-	}
-
 	void UpdateHorizontalMovement() {
 
 		//Move Player based on movement
 		playerRB.velocity = new Vector2(_horizontal, playerRB.velocity.y);
-		//Debug.Log($"velocity = {playerRB.velocity}");
+	}
+
+	void UpdateVerticalMovement() {
+		//Move Player based on movement
+		playerRB.velocity = new Vector2(playerRB.velocity.x, _vertical);
 	}
 
 	void UpdatAnimator() {
 		// Set the animation of player based on movement
 		playerAnim.SetBool("isJumping", !isGrounded);
-		playerAnim.SetBool("isCrouching", isCrouching);
 		playerAnim.SetBool("isWalking", isWalking);
 
 		//playerAnim.SetBool("isWalking", _horizontal != 0);
@@ -144,6 +127,11 @@ public class CharacterMovement : MonoBehaviour {
 		} else {
 			isWalking = false;
         }
+
+		if(ClimbingAllowed) {
+			//climbing stairs animator update
+			playerAnim.SetInteger("isClimbing", (int)_vertical);
+		}
 			
 	}
 
@@ -153,15 +141,13 @@ public class CharacterMovement : MonoBehaviour {
 		isGrounded = hit != null;
 	}
 
-	void CalculateIsCrouching() {
-		//Check if head is hitting anything with OverlapCircle Raycast
-		var hit = Physics2D.OverlapCircle(playerHead.position, 0.1f, LayerMask.GetMask("Ground"));
-		isCrouching = hit != null;
-	}
-
-	internal void ResetToStart() {
-		playerRB.position = _startPosition;
-	}
+	void CalculateClimbing() {
+        if (ClimbingAllowed) {
+			playerRB.isKinematic = true;
+        } else {
+			playerRB.isKinematic = false;
+        }
+    }
 
 	internal void TeleportTo(Vector3 position) {
 		playerRB.position = position;

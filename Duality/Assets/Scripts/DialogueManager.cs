@@ -60,13 +60,13 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("isOpen", false);
 
         //if intro dialogue, then increment without item recieved
-        if (Grandma.checkpoint == 0) {
-            Grandma.checkpoint++;
+        if (GameManager.checkpoint == 0) {
+            GameManager.checkpoint++;
             return;
         }
 
         if (itemRecieved) {
-            Grandma.checkpoint++;
+            GameManager.checkpoint++;
             // set item recieved back to false until we get the next item
             itemRecieved = false;
         }

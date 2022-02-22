@@ -13,12 +13,10 @@ public class DialogueTrigger : MonoBehaviour
     public Animator animator;
 
     public void TriggerDialogue(bool item = false) {
-        
-        var dialogueManager = FindObjectOfType<DialogueManager>();
 
-        dialogueManager.animator = animator;
-        dialogueManager.nameText = nameText;
-        dialogueManager.dialogueText = dialogueText;
-        dialogueManager.StartDialogue(m_dialogue, item);
+        GameManager.instance.dialogueManager.animator = animator;
+        GameManager.instance.dialogueManager.nameText = nameText;
+        GameManager.instance.dialogueManager.dialogueText = dialogueText;
+        GameManager.instance.dialogueManager.StartDialogue(m_dialogue, item);
     }
 }

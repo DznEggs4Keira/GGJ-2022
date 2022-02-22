@@ -9,16 +9,6 @@ public class AudioManager : MonoBehaviour
     private AudioSource track01, track02;
     private bool isPlayingTrack01;
 
-    #region Singleton
-    public static AudioManager instance;
-
-    private void Awake() {
-        if (instance == null) {
-            instance = this;
-        }
-    }
-    #endregion
-
     private void Start() {
         track01 = gameObject.AddComponent<AudioSource>();
         track02 = gameObject.AddComponent<AudioSource>();
@@ -34,19 +24,9 @@ public class AudioManager : MonoBehaviour
     }
 
     public void SwapTrack(AudioClip newClip) {
-        //StopAllCoroutines();
-        //StartCoroutine(FadeTrack(newClip));
-
-        if (isPlayingTrack01) {
-            track02.clip = newClip;
-            track02.Play();
-            track01.Stop();
-        } else {
-
-            track01.clip = newClip;
-            track01.Play();
-            track02.Stop();
-        }
+        
+        StopAllCoroutines();
+        StartCoroutine(FadeTrack(newClip));
 
         isPlayingTrack01 = !isPlayingTrack01;
     }

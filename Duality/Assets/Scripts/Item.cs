@@ -13,7 +13,7 @@ public class Item : Interactable {
 
     public override void Interact() {
         //check if at the right checkpoint to interact with item
-        if (Grandma.checkpoint == itemId - 1) {
+        if (GameManager.checkpoint == itemId - 1) {
             // Allow interaction
 
             //parent to player

@@ -22,7 +22,7 @@ public class Outro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Grandma.checkpoint == 7 && !isOutroInit) {
+        if(GameManager.checkpoint == 7 && !isOutroInit) {
             InitiateOutro();
             UVModel.GetComponentInParent<Grandma>().TriggerDialogueManual();
         }
@@ -33,7 +33,7 @@ public class Outro : MonoBehaviour
         isOutroInit = true;
 
         // fade music
-        AudioManager.instance.SwapTrack(newClip);
+        GameManager.instance.audioManager.SwapTrack(newClip);
 
         // start particles
         particles.Play();

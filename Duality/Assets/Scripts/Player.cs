@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public bool disablePlayer = false;
 
-    [SerializeField] public CharacterMovement controller;
+    public CharacterMovement controller;
     [SerializeField] private ChracterInteraction interactor;
 
     // Torchlight
@@ -33,21 +33,24 @@ public class Player : MonoBehaviour
 
     private void HandleTorch() {
 
-        // Flashlight
-        if (Input.GetButtonDown("Torchlight")) {
-            torch = true;
+        // if grandma has given torch
+        if(GameManager.checkpoint >= 1) {
+            // Flashlight
+            if (Input.GetButtonDown("Torchlight")) {
+                torch = true;
 
-            //if torch is on, we gotta enable the transform first
-            playerArm.gameObject.SetActive(torch);
+                //if torch is on, we gotta enable the transform first
+                playerArm.gameObject.SetActive(torch);
 
-        } else if (Input.GetButtonUp("Torchlight")) {
-            torch = false;
+            } else if (Input.GetButtonUp("Torchlight")) {
+                torch = false;
 
-            playerArm.gameObject.SetActive(torch);
-        }
+                playerArm.gameObject.SetActive(torch);
+            }
 
-        if (torch) {
-            controller.LookAtMouse(playerArm);
+            if (torch) {
+                controller.LookAtMouse(playerArm);
+            }
         }
     }
 
