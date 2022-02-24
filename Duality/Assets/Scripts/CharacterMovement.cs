@@ -49,7 +49,10 @@ public class CharacterMovement : MonoBehaviour {
 
 		UpdatAnimator();
 
-		CalculateIsGrounded();
+        if (!ClimbingAllowed) {
+			CalculateIsGrounded();
+		}
+
 		CalculateClimbing();
 
 		// Get the Input Movement from the player
@@ -142,10 +145,14 @@ public class CharacterMovement : MonoBehaviour {
 	}
 
 	void CalculateClimbing() {
+		var initGravity = playerRB.gravityScale;
+
         if (ClimbingAllowed) {
 			playerRB.isKinematic = true;
+			playerRB.gravityScale = 0f;
         } else {
 			playerRB.isKinematic = false;
+			playerRB.gravityScale = initGravity;
         }
     }
 

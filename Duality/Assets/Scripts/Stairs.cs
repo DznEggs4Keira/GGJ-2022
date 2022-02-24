@@ -9,6 +9,7 @@ public class Stairs: MonoBehaviour
     [SerializeField] PlatformEffector2D connectedFloorEffector;
 
     private float waitTime = 0.5f;
+    private bool resetFloor;
 
     private void Update() {
 
@@ -17,9 +18,12 @@ public class Stairs: MonoBehaviour
             if (Input.GetAxis($"Vertical") > 0) {
                 //going up then the offset has to be zero
                 connectedFloorEffector.rotationalOffset = 0;
+                resetFloor = true;
             } else if (Input.GetAxis($"Vertical") < 0) {
 
-                StartCoroutine(ResetFloor(waitTime));
+                if (resetFloor) {
+                    StartCoroutine(ResetFloor(waitTime));
+                }
             }
 
             //else if (Mathf.Approximately(Input.GetAxis($"Vertical"), 0)) {
@@ -47,5 +51,7 @@ public class Stairs: MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         connectedFloorEffector.rotationalOffset = 0;
+
+        resetFloor = false;
     }
 }
