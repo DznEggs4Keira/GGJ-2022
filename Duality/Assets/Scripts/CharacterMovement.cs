@@ -49,11 +49,12 @@ public class CharacterMovement : MonoBehaviour {
 
 		UpdatAnimator();
 
-        if (!ClimbingAllowed) {
+		CalculateCanClimb();
+		if (!ClimbingAllowed) {
 			CalculateIsGrounded();
 		}
 
-		CalculateClimbing();
+		
 
 		// Get the Input Movement from the player
 		_horizontal = Input.GetAxis($"Horizontal") * _speed;
@@ -65,6 +66,7 @@ public class CharacterMovement : MonoBehaviour {
 		}
 
 		PerformJumpingCalculations();
+		PerformClimbing();
 	}
 
 	void PerformJumpingCalculations() {
@@ -144,15 +146,18 @@ public class CharacterMovement : MonoBehaviour {
 		isGrounded = hit != null;
 	}
 
-	void CalculateClimbing() {
-		var initGravity = playerRB.gravityScale;
+	void CalculateCanClimb() {
+		//Check if on Stairs with OverlapCircle Raycast
+		var hit = Physics2D.OverlapCircle(playerFeet.position, 0.5f, LayerMask.GetMask("Interactables"));
+		ClimbingAllowed = hit != null;
+	}
+
+	void PerformClimbing() {
 
         if (ClimbingAllowed) {
 			playerRB.isKinematic = true;
-			playerRB.gravityScale = 0f;
         } else {
 			playerRB.isKinematic = false;
-			playerRB.gravityScale = initGravity;
         }
     }
 
