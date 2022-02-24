@@ -53,12 +53,17 @@ public class Outro : MonoBehaviour
 
         WillowModel.GetComponentInParent<Player>().disablePlayer = true;
 
-        StartCoroutine(FadeOutExit(30));
+        if (GameManager.instance.dialogueManager.DialogueEnded) {
+            StartCoroutine(FadeOutExit());
+        }
     }
 
-    IEnumerator FadeOutExit(float delay) {
-        yield return new WaitForSeconds(delay);
+    IEnumerator FadeOutExit() {
+
+        yield return new WaitForSeconds(30);
 
         GameManager.instance.fadeManager.Fade();
+
+        //yield return null;
     }
 }

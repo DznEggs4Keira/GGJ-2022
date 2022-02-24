@@ -117,9 +117,9 @@ public class CharacterMovement : MonoBehaviour {
 	void UpdatAnimator() {
 		// Set the animation of player based on movement
 		playerAnim.SetBool("isJumping", !isGrounded);
-		playerAnim.SetBool("isWalking", isWalking);
-
-		//playerAnim.SetBool("isWalking", _horizontal != 0);
+		playerAnim.SetFloat("Horizontal", _horizontal);
+		playerAnim.SetBool("isWalking", _horizontal != 0 || _vertical != 0);
+		
 		if (_horizontal != 0) {
 			isWalking = true;
 			//flip player model based on movement
@@ -130,7 +130,7 @@ public class CharacterMovement : MonoBehaviour {
 
 		if(ClimbingAllowed) {
 			//climbing stairs animator update
-			playerAnim.SetInteger("isClimbing", (int)_vertical);
+			playerAnim.SetFloat("Vertical", _vertical);
 		}
 			
 	}

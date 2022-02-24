@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     public bool disablePlayer = false;
 
     public CharacterMovement controller;
-    [SerializeField] private ChracterInteraction interactor;
+    public ChracterInteraction interactor;
 
     // Torchlight
     [SerializeField] Transform playerArm;

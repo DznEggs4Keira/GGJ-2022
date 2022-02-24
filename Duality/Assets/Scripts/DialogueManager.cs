@@ -13,6 +13,12 @@ public class DialogueManager : MonoBehaviour
 
     private bool itemRecieved = false;
     private Queue<string> sentences;
+    private bool dialogueEnded = false;
+
+    public bool DialogueEnded {
+        get { return dialogueEnded; }
+        set { dialogueEnded = value; }
+    }
 
     private void Start() {
         sentences = new Queue<string>();
@@ -37,7 +43,9 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence() {
 
-        if(sentences.Count == 0) {
+        DialogueEnded = false;
+
+        if (sentences.Count == 0) {
             EndDialogue();
             return;
         }
@@ -57,6 +65,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void EndDialogue() {
+        DialogueEnded = true;
         animator.SetBool("isOpen", false);
 
         //if intro dialogue, then increment without item recieved
@@ -70,5 +79,7 @@ public class DialogueManager : MonoBehaviour
             // set item recieved back to false until we get the next item
             itemRecieved = false;
         }
+
+        GameManager.instance.player.interactor.CheckInTrigger();
     }
 }

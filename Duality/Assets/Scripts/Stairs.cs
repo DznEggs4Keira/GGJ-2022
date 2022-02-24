@@ -8,6 +8,8 @@ public class Stairs: MonoBehaviour
 
     [SerializeField] PlatformEffector2D connectedFloorEffector;
 
+    private float waitTime = 0.5f;
+
     private void Update() {
 
         //if true
@@ -16,9 +18,13 @@ public class Stairs: MonoBehaviour
                 //going up then the offset has to be zero
                 connectedFloorEffector.rotationalOffset = 0;
             } else if (Input.GetAxis($"Vertical") < 0) {
-                //going down then the offset has to be 180
-                connectedFloorEffector.rotationalOffset = 180;
+
+                StartCoroutine(ResetFloor(waitTime));
             }
+
+            //else if (Mathf.Approximately(Input.GetAxis($"Vertical"), 0)) {
+            //    connectedFloorEffector.rotationalOffset = 0;
+            //}
         }
     }
 
@@ -30,6 +36,16 @@ public class Stairs: MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision) {
         //climbing disabled
         Player.controller.ClimbingAllowed = false;
+        connectedFloorEffector.rotationalOffset = 0;
+        StopAllCoroutines();
+    }
+
+    IEnumerator ResetFloor(float delay) {
+        //going down then the offset has to be 180
+        connectedFloorEffector.rotationalOffset = 180;
+
+        yield return new WaitForSeconds(waitTime);
+
         connectedFloorEffector.rotationalOffset = 0;
     }
 }

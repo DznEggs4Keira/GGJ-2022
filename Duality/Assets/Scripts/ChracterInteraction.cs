@@ -24,17 +24,34 @@ public class ChracterInteraction : MonoBehaviour
 
         m_Interactable = collision.GetComponentInParent<Interactable>();
 
+        EnableInteraction();
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) {
+        isInteracting = false;
+        interactionText.text = "";
+    }
+
+    public void CheckInTrigger() {
+        ContactFilter2D filter = new ContactFilter2D(); filter.NoFilter();
+        Collider2D[] results = null;
+
+        // if still in trigger, enable interaction
+        _ = Physics2D.OverlapCollider(GameManager.instance.player.transform.GetComponentInChildren<Collider2D>(), filter, results);
+
+        if (results[0].transform == m_Interactable.transform) {
+            EnableInteraction();
+        }
+    }
+
+    private void EnableInteraction() {
+
         if (m_Interactable != null) {
             isInteracting = true;
             interactionText.text = m_Interactable.GetDescription();
 
             interactionHoldGO.SetActive(m_Interactable.interactionType == Interactable.Interactions.Hold_Open);
         }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision) {
-        isInteracting = false;
-        interactionText.text = "";
     }
 
     private void HandleInteraction(Interactable interactable) {
@@ -44,6 +61,7 @@ public class ChracterInteraction : MonoBehaviour
                 if(Input.GetButtonDown("Interact")) {
                     interactable.Interact();
                     isInteracting = false;
+                    interactionText.text = "";
                 }
                 break;
 

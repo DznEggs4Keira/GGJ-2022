@@ -3479,6 +3479,10 @@ PrefabInstance:
       propertyPath: interactionType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5908756819122094712, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
+      propertyPath: connectedFloorEffector
+      value: 
+      objectReference: {fileID: 1186975405}
     - target: {fileID: 7880797993000547286, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_Name
       value: Stairs
@@ -4514,6 +4518,7 @@ MonoBehaviour:
   uiManager: {fileID: 754299933}
   audioManager: {fileID: 77259373}
   dialogueManager: {fileID: 1699094422}
+  player: {fileID: 0}
 --- !u!4 &1199494182
 Transform:
   m_ObjectHideFlags: 0
