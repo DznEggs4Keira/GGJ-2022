@@ -485,6 +485,11 @@ Transform:
   m_Father: {fileID: 1698634458}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &147498310 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8816151120627376095, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+  m_PrefabInstance: {fileID: 6275406102075388254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &147686502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs
       objectReference: {fileID: 0}
+    - target: {fileID: 7880797993000547286, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8996917579637318433, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.038
@@ -1573,15 +1582,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3470978967678733685, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.98
-      objectReference: {fileID: 0}
     - target: {fileID: 8572619583001715516, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1410428556, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4e2e0d78f9d9b734ca02d17d85f710d0, type: 3}
 --- !u!4 &478641169 stripped
 Transform:
@@ -3487,6 +3493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs
       objectReference: {fileID: 0}
+    - target: {fileID: 7880797993000547286, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8996917579637318433, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.017
@@ -3569,6 +3579,11 @@ Transform:
   m_Father: {fileID: 479083598}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &933665993 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2269942176784061541, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+  m_PrefabInstance: {fileID: 6275406102075388254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &944933411
 GameObject:
   m_ObjectHideFlags: 0
@@ -4533,6 +4548,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1202785344 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 691943293638731628, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+  m_PrefabInstance: {fileID: 6275406102075388254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1224899321
 GameObject:
   m_ObjectHideFlags: 0
@@ -4612,6 +4632,11 @@ MonoBehaviour:
   - {x: -2.643771, y: 2.2187996, z: 0}
   - {x: -3.419482, y: 1.055233, z: 0}
   - {x: -3.7203758, y: -0.35798264, z: 0}
+--- !u!70 &1243229074 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5741704263013676064, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+  m_PrefabInstance: {fileID: 6275406102075388254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1298990752
 GameObject:
   m_ObjectHideFlags: 0
@@ -6212,6 +6237,7 @@ MonoBehaviour:
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
   animator: {fileID: 0}
+  npcCollider: {fileID: 1243229074}
 --- !u!4 &1699094423
 Transform:
   m_ObjectHideFlags: 0
@@ -6638,8 +6664,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -40}
-  m_SizeDelta: {x: -303.0274, y: -145.7963}
+  m_AnchoredPosition: {x: 33.8648, y: -40}
+  m_SizeDelta: {x: -205.9487, y: -145.7963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1843624274
 MonoBehaviour:
@@ -6661,14 +6687,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'W to Jump - 2x to double Jump
+  m_text: 'W S to go up and down the Sairs
 
     A D to move
 
-    E to Interact
+    Space to Jump -
+    2x to double Jump
 
-    Left
-    Click to talk to Grandma
+    E to Interact
 
     Right Click to turn on torchlight'
   m_isRightToLeft: 0
@@ -7815,6 +7841,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5596340027926173827, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
+      propertyPath: m_Size.x
+      value: 0.7563351
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596340027926173827, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
+      propertyPath: m_Size.y
+      value: 0.95938826
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596340027926173827, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.024654001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596340027926173827, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0129603
+      objectReference: {fileID: 0}
     - target: {fileID: 5908756819122094712, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: Player
       value: 
@@ -7826,6 +7868,10 @@ PrefabInstance:
     - target: {fileID: 7880797993000547286, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
       propertyPath: m_Name
       value: Stairs
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880797993000547286, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfac36eb14a07e8459ae81e7154521f2, type: 3}
@@ -8421,18 +8467,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1658300398}
     m_Modifications:
+    - target: {fileID: 353273379, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: NPCCollider
+      value: 
+      objectReference: {fileID: 1243229074}
+    - target: {fileID: 1248576262, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: NPCCollider
+      value: 
+      objectReference: {fileID: 1243229074}
+    - target: {fileID: 1912380124, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: NPCCollider
+      value: 
+      objectReference: {fileID: 1243229074}
+    - target: {fileID: 1994728194, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: NPCCollider
+      value: 
+      objectReference: {fileID: 1243229074}
+    - target: {fileID: 2059684761, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: UVModel
+      value: 
+      objectReference: {fileID: 933665993}
     - target: {fileID: 2059684761, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: WillowSR
       value: 
       objectReference: {fileID: 1555960545}
     - target: {fileID: 2059684761, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: Colliders
+      value: 
+      objectReference: {fileID: 1202785344}
+    - target: {fileID: 2059684761, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: WillowModel
       value: 
       objectReference: {fileID: 1555960543}
+    - target: {fileID: 2059684761, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: GrandmaModel
+      value: 
+      objectReference: {fileID: 147498310}
     - target: {fileID: 1681854183426430496, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 168774481}
+    - target: {fileID: 2771589063754709618, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: NPCCollider
+      value: 
+      objectReference: {fileID: 1243229074}
     - target: {fileID: 2771589063754709620, guid: 8c595815095300043a1a28006270f3cd, type: 3}
       propertyPath: m_Name
       value: Grandma Violet
@@ -8501,6 +8579,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1699094422}
+    - target: {fileID: 8180185006638368265, guid: 8c595815095300043a1a28006270f3cd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c595815095300043a1a28006270f3cd, type: 3}
 --- !u!114 &6275406102075388255 stripped

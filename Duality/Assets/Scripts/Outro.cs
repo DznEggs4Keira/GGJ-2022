@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Outro : MonoBehaviour
 {
-
-    public SpriteRenderer GrandmaSR;
+    public Transform GrandmaModel;
     public Transform UVModel;
-    public Sprite UltraViolet;
+    public Transform Colliders;
 
     public SpriteRenderer WillowSR;
     public Sprite GrannyWillow;
@@ -24,7 +23,10 @@ public class Outro : MonoBehaviour
     {
         if(GameManager.checkpoint == 7 && !isOutroInit) {
             InitiateOutro();
-            UVModel.GetComponentInParent<Grandma>().TriggerDialogueManual();
+        }
+
+        if (isOutroInit && GameManager.instance.dialogueManager.DialogueEnded) {
+            StartCoroutine(FadeOutExit());
         }
     }
 
@@ -39,10 +41,9 @@ public class Outro : MonoBehaviour
         particles.Play();
 
         // turn granny to uv
-        GrandmaSR.sprite = UltraViolet;
-
-        Vector3 newScale = new Vector3(0.4f, 0.4f, 1f);
-        UVModel.localScale = newScale;
+        Colliders.gameObject.SetActive(false);
+        GrandmaModel.gameObject.SetActive(false);
+        GrandmaModel.gameObject.SetActive(true);
 
         // turn off animator and turn willow to granny
         WillowSR.transform.gameObject.GetComponentInChildren<Animator>().enabled = false;
@@ -53,17 +54,12 @@ public class Outro : MonoBehaviour
 
         WillowModel.GetComponentInParent<Player>().disablePlayer = true;
 
-        if (GameManager.instance.dialogueManager.DialogueEnded) {
-            StartCoroutine(FadeOutExit());
-        }
+        UVModel.GetComponentInParent<Grandma>().TriggerDialogueManual();
     }
 
     IEnumerator FadeOutExit() {
-
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(3);
 
         GameManager.instance.fadeManager.Fade();
-
-        //yield return null;
     }
 }

@@ -148,8 +148,8 @@ public class CharacterMovement : MonoBehaviour {
 
 	void CalculateCanClimb() {
 		//Check if on Stairs with OverlapCircle Raycast
-		var hit = Physics2D.OverlapCircle(playerFeet.position, 0.5f, LayerMask.GetMask("Interactables"));
-		ClimbingAllowed = hit != null;
+		var hit = Physics2D.OverlapCircle(playerFeet.position, 0.5f, LayerMask.GetMask("Stairs"));
+			ClimbingAllowed = hit != null;
 	}
 
 	void PerformClimbing() {

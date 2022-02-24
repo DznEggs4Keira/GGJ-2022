@@ -11,6 +11,8 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
 
+    public Collider2D npcCollider;
+
     private bool itemRecieved = false;
     private Queue<string> sentences;
     private bool dialogueEnded = false;
@@ -65,6 +67,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     private void EndDialogue() {
+        npcCollider.enabled = true;
         DialogueEnded = true;
         animator.SetBool("isOpen", false);
 
@@ -80,6 +83,6 @@ public class DialogueManager : MonoBehaviour
             itemRecieved = false;
         }
 
-        GameManager.instance.player.interactor.CheckInTrigger();
+        
     }
 }

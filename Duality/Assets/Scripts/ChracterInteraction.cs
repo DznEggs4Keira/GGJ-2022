@@ -32,18 +32,6 @@ public class ChracterInteraction : MonoBehaviour
         interactionText.text = "";
     }
 
-    public void CheckInTrigger() {
-        ContactFilter2D filter = new ContactFilter2D(); filter.NoFilter();
-        Collider2D[] results = null;
-
-        // if still in trigger, enable interaction
-        _ = Physics2D.OverlapCollider(GameManager.instance.player.transform.GetComponentInChildren<Collider2D>(), filter, results);
-
-        if (results[0].transform == m_Interactable.transform) {
-            EnableInteraction();
-        }
-    }
-
     private void EnableInteraction() {
 
         if (m_Interactable != null) {
