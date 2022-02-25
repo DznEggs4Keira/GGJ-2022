@@ -41,9 +41,10 @@ public class Outro : MonoBehaviour
         particles.Play();
 
         // turn granny to uv
+        GetComponent<SwitchGraandma>().enabled = false;
         Colliders.gameObject.SetActive(false);
         GrandmaModel.gameObject.SetActive(false);
-        GrandmaModel.gameObject.SetActive(true);
+        UVModel.gameObject.SetActive(true);
 
         // turn off animator and turn willow to granny
         WillowSR.transform.gameObject.GetComponentInChildren<Animator>().enabled = false;
